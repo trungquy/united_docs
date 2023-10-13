@@ -1,0 +1,56 @@
+﻿TorchStandardScaler
+===================
+
+.. currentmodule:: united.data.encoders
+
+
+.. autoclass:: TorchStandardScaler
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+   :inherited-members:
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~TorchStandardScaler.fit
+      ~TorchStandardScaler.fit_transform
+      ~TorchStandardScaler.get_params
+      ~TorchStandardScaler.inverse_transform
+      ~TorchStandardScaler.set_output
+      ~TorchStandardScaler.set_params
+      ~TorchStandardScaler.to
+      ~TorchStandardScaler.transform
+   
+   
+
+   
+    
+   
+   
+   
+   

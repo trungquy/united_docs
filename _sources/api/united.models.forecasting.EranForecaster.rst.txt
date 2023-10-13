@@ -1,0 +1,33 @@
+﻿EranForecaster
+==============
+
+.. currentmodule:: united.models.forecasting
+
+
+.. autoclass:: EranForecaster
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~EranForecaster.forward
+   
+   
+
+   
+    
+   
+   
+   
+   

@@ -1,0 +1,75 @@
+Tutorials
+==========
+
+.. _tutorials:
+
+Below are introductory tutorials for `united`.
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 6
+   :hidden:
+
+   examples/electricity/forecasting
+   examples/basic_motions/classification
+   examples/human_activity_recognition/annotation
+
+
+.. grid:: 1 2 2 2
+    :gutter: 3
+
+    .. grid-item-card::
+        :text-align: center
+
+        Time series forecasting
+
+        ^^^
+
+        Electricity consumption forecasting on `UCI's Electricity` dataset
+
+        +++
+
+        .. button-ref:: examples/electricity/forecasting
+            :color: primary
+            :click-parent:
+            :expand:
+
+            Time series forecasting
+
+    .. grid-item-card::
+        :text-align: center
+
+        Time series classification
+
+        ^^^
+
+        An example on `BasicMotions` dataset
+
+        +++
+
+        .. button-ref:: examples/basic_motions/classification
+            :color: primary
+            :click-parent:
+            :expand:
+
+            Time series classification
+
+    .. grid-item-card::
+        :text-align: center
+
+        Time series annotation
+
+        ^^^
+
+        An annotation tasks example on `Human Activity Recognition Using Smartphones` dataset
+
+        +++
+
+        .. button-ref:: examples/human_activity_recognition/annotation
+            :color: primary
+            :click-parent:
+            :expand:
+
+            Time series annotation
+
+   

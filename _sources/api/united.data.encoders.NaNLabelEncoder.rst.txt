@@ -1,0 +1,82 @@
+﻿NaNLabelEncoder
+===============
+
+.. currentmodule:: united.data.encoders
+
+
+.. autoclass:: NaNLabelEncoder
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+   :inherited-members:
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~NaNLabelEncoder.fit
+      ~NaNLabelEncoder.fit_transform
+      ~NaNLabelEncoder.get_parameters
+      ~NaNLabelEncoder.get_params
+      ~NaNLabelEncoder.get_transform
+      ~NaNLabelEncoder.guess_nan_value
+      ~NaNLabelEncoder.inverse_preprocess
+      ~NaNLabelEncoder.inverse_transform
+      ~NaNLabelEncoder.is_numeric
+      ~NaNLabelEncoder.preprocess
+      ~NaNLabelEncoder.set_output
+      ~NaNLabelEncoder.set_params
+      ~NaNLabelEncoder.transform
+   
+   
+
+   
+    
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~NaNLabelEncoder.TRANSFORMATIONS
+      ~NaNLabelEncoder.nan_label
+   
+   

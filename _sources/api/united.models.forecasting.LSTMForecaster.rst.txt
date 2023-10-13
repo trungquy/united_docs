@@ -1,0 +1,33 @@
+﻿LSTMForecaster
+==============
+
+.. currentmodule:: united.models.forecasting
+
+
+.. autoclass:: LSTMForecaster
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~LSTMForecaster.get_rnn_net
+   
+   
+
+   
+    
+   
+   
+   
+   

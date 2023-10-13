@@ -1,0 +1,33 @@
+﻿EranClassifier
+==============
+
+.. currentmodule:: united.models.classification
+
+
+.. autoclass:: EranClassifier
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~EranClassifier.forward
+   
+   
+
+   
+    
+   
+   
+   
+   

@@ -1,0 +1,33 @@
+﻿CrossEntropyLoss
+================
+
+.. currentmodule:: united.metrics
+
+
+.. autoclass:: CrossEntropyLoss
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~CrossEntropyLoss.forward
+   
+   
+
+   
+    
+   
+   
+   
+   

@@ -1,0 +1,42 @@
+﻿GraphICClassifier
+=================
+
+.. currentmodule:: united.models.classification
+
+
+.. autoclass:: GraphICClassifier
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~GraphICClassifier.cal_num_hidden_features
+      ~GraphICClassifier.construct_hidden_features
+      ~GraphICClassifier.forward
+      ~GraphICClassifier.get_rnn_net
+   
+   
+
+   
+    
+   
+   
+   
+   

@@ -1,0 +1,50 @@
+﻿InterpolateImputer
+==================
+
+.. currentmodule:: united.data.imputers
+
+
+.. autoclass:: InterpolateImputer
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+   :inherited-members:
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~InterpolateImputer.fit
+      ~InterpolateImputer.fit_transform
+      ~InterpolateImputer.get_params
+      ~InterpolateImputer.set_output
+      ~InterpolateImputer.set_params
+      ~InterpolateImputer.transform
+   
+   
+
+   
+    
+   
+   
+   
+   

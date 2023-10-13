@@ -1,0 +1,33 @@
+﻿BaseGraphIC
+===========
+
+.. currentmodule:: united.models.base
+
+
+.. autoclass:: BaseGraphIC
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~BaseGraphIC.from_dataset
+   
+   
+
+   
+    
+   
+   
+   
+   

@@ -1,0 +1,41 @@
+﻿EncoderDecoderMixins
+====================
+
+.. currentmodule:: united.models.base
+
+
+.. autoclass:: EncoderDecoderMixins
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+   :inherited-members:
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~EncoderDecoderMixins.construct_output
+      ~EncoderDecoderMixins.get_sequence_lengths
+      ~EncoderDecoderMixins.get_target_masks
+   
+   
+
+   
+    
+   
+   
+   
+   

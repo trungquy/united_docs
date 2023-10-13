@@ -1,0 +1,50 @@
+﻿ConstantFillingImputer
+======================
+
+.. currentmodule:: united.data.imputers
+
+
+.. autoclass:: ConstantFillingImputer
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+   :inherited-members:
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ConstantFillingImputer.fit
+      ~ConstantFillingImputer.fit_transform
+      ~ConstantFillingImputer.get_params
+      ~ConstantFillingImputer.set_output
+      ~ConstantFillingImputer.set_params
+      ~ConstantFillingImputer.transform
+   
+   
+
+   
+    
+   
+   
+   
+   

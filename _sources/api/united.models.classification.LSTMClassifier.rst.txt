@@ -1,0 +1,36 @@
+﻿LSTMClassifier
+==============
+
+.. currentmodule:: united.models.classification
+
+
+.. autoclass:: LSTMClassifier
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~LSTMClassifier.construct_input
+      ~LSTMClassifier.forward
+   
+   
+
+   
+    
+   
+   
+   
+   

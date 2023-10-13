@@ -1,0 +1,139 @@
+﻿TimeSeriesDataset
+=================
+
+.. currentmodule:: united.data.timeseries
+
+
+.. autoclass:: TimeSeriesDataset
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+   :inherited-members:
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~TimeSeriesDataset.calculate_decoder_length
+      ~TimeSeriesDataset.calculate_total_time_steps
+      ~TimeSeriesDataset.check_if_missing_time_step
+      ~TimeSeriesDataset.compute_sequence_length
+      ~TimeSeriesDataset.count_missing_time_steps
+      ~TimeSeriesDataset.expand_ids_with_counter
+      ~TimeSeriesDataset.from_dataset
+      ~TimeSeriesDataset.from_parameters
+      ~TimeSeriesDataset.get_missing_time_step_mask
+      ~TimeSeriesDataset.get_parameters
+      ~TimeSeriesDataset.get_properties
+      ~TimeSeriesDataset.normalize_column_names
+      ~TimeSeriesDataset.to_dataloader
+      ~TimeSeriesDataset.validate_data
+   
+   
+
+   
+    
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~TimeSeriesDataset.cat_names
+      ~TimeSeriesDataset.cat_sizes
+      ~TimeSeriesDataset.cont_names
+      ~TimeSeriesDataset.decoder_cat_names
+      ~TimeSeriesDataset.decoder_cat_positions
+      ~TimeSeriesDataset.decoder_cont_names
+      ~TimeSeriesDataset.decoder_cont_positions
+      ~TimeSeriesDataset.encoder_cat_names
+      ~TimeSeriesDataset.encoder_cat_positions
+      ~TimeSeriesDataset.encoder_cont_names
+      ~TimeSeriesDataset.encoder_cont_positions
+      ~TimeSeriesDataset.features
+      ~TimeSeriesDataset.max_length
+      ~TimeSeriesDataset.min_length
+      ~TimeSeriesDataset.target_cat_names
+      ~TimeSeriesDataset.target_cat_positions
+      ~TimeSeriesDataset.target_cat_sizes
+      ~TimeSeriesDataset.target_cont_names
+      ~TimeSeriesDataset.target_cont_positions
+      ~TimeSeriesDataset.target_positions
+   
+   

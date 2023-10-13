@@ -1,0 +1,45 @@
+﻿GraphICForecaster
+=================
+
+.. currentmodule:: united.models.forecasting
+
+
+.. autoclass:: GraphICForecaster
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~GraphICForecaster.cal_num_hidden_features
+      ~GraphICForecaster.construct_decoder_input_step
+      ~GraphICForecaster.construct_hidden_features
+      ~GraphICForecaster.forward
+      ~GraphICForecaster.get_rnn_net
+   
+   
+
+   
+    
+   
+   
+   
+   

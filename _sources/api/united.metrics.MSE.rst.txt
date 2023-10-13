@@ -1,0 +1,33 @@
+﻿MSE
+===
+
+.. currentmodule:: united.metrics
+
+
+.. autoclass:: MSE
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~MSE.forward
+   
+   
+
+   
+    
+   
+   
+   
+   

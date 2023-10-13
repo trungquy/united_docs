@@ -1,0 +1,33 @@
+﻿SelfAttentionPredictor
+======================
+
+.. currentmodule:: united.models.base
+
+
+.. autoclass:: SelfAttentionPredictor
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~SelfAttentionPredictor.forward
+   
+   
+
+   
+    
+   
+   
+   
+   

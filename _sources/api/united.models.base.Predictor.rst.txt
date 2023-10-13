@@ -1,0 +1,33 @@
+﻿Predictor
+=========
+
+.. currentmodule:: united.models.base
+
+
+.. autoclass:: Predictor
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Predictor.create
+   
+   
+
+   
+    
+   
+   
+   
+   

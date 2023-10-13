@@ -1,0 +1,108 @@
+﻿BaseModule
+==========
+
+.. currentmodule:: united.models.base
+
+
+.. autoclass:: BaseModule
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~BaseModule.cal_output_sizes
+      ~BaseModule.compute_evaluation_metrics
+      ~BaseModule.compute_loss
+      ~BaseModule.configure_optimizers
+      ~BaseModule.construct_input
+      ~BaseModule.construct_output
+      ~BaseModule.forward
+      ~BaseModule.from_dataset
+      ~BaseModule.get_sequence_lengths
+      ~BaseModule.get_target_masks
+      ~BaseModule.inverse_predictions
+      ~BaseModule.log_losses
+      ~BaseModule.log_metrics
+      ~BaseModule.normalize_predictions_and_targets
+      ~BaseModule.on_test_epoch_end
+      ~BaseModule.on_validation_epoch_end
+      ~BaseModule.predict
+      ~BaseModule.predict_proba
+      ~BaseModule.predictions_to_tensor
+      ~BaseModule.predictions_with_logits_to_predictions
+      ~BaseModule.predictions_with_logits_to_predictions_with_proba
+      ~BaseModule.step
+      ~BaseModule.tensor_to_predictions
+      ~BaseModule.test_step
+      ~BaseModule.training_step
+      ~BaseModule.validation_step
+   
+   
+
+   
+    
+   
+   
+   
+   

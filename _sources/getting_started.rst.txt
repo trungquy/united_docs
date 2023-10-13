@@ -1,0 +1,167 @@
+Get started
+===============
+
+.. _getting-started:
+
+
+.. toctree::
+   :titlesonly:
+
+Installation
+--------------
+
+.. _install:
+
+- Install from git repo:
+
+.. code-block:: bash
+    
+    conda create --name united python=3.10
+    conda activate united
+    pip install https://github.com/trungquy/united
+
+- Install from source code:
+
+.. code:: bash
+    
+    conda create --name united python=3.10
+    conda activate united
+    cd <united source folder>
+    pip install -e .
+
+Common workflow working with `united`
+--------------------------------------
+
+.. mermaid:: _static/framework.mmd
+
+
+
+Usage
+-------------
+
+.. currentmodule:: united
+
+The general setup for training and testing a model as following:
+
+#. Load data into :py:class:`pandas.DataFrame`
+
+    .. code-block:: python
+
+        # load data into Pandas DataFrame
+        train_df = ... # pandas DataFrame
+        val_df = ... # pandas DataFrame
+        test_df = ... # pandas DataFrame        
+
+#. Create dataset instances using :py:class:`~data.timeseries.TimeSeriesDataset` or :py:class:`~data.timeseries.SensorTimeSeriesDataset`
+
+    .. code-block:: python
+
+        # define dataset
+        training = TimeSeriesDataSet(
+            group_ids=['sensor'],
+            time_idx='time_idx',
+            min_encoder_length=7*24,
+            max_encoder_length=7*24,
+            min_decoder_length=24,
+            max_decoder_length=24,
+            encoder_variables=[...],
+            decoder_variables=[...],
+            targets=[...],
+            training=True,
+            imputers=None, # "ffill", "bfill", "linear", "tryhard", "mean"
+        )
+ 
+#. Using the training dataset, create a validation dataset with :py:meth:`~data.timeseries.TimeSeriesDataset.from_dataset`.
+   Similarly, a test dataset or later a dataset for inference can be created. You can store the dataset parameters
+   directly if you do not wish to load the entire training dataset at inference time.
+
+   .. code-block:: python
+        
+        # create validation and training dataset
+        val_dataset = TimeSeriesDataset.from_dataset(train_dataset, val_df, training=False)
+        test_dataset = TimeSeriesDataset.from_dataset(train_dataset, test_df, training=False)
+
+#. Create :py:class:`torch.utils.data.DataLoader` instances
+
+    .. code-block:: python
+
+        batch_size = 32
+        num_workers = 0
+        train_loader    = train_dataset.to_dataloader(batch_size=batch_size, num_workers=num_workers)
+        val_loader      = val_dataset.to_dataloader(batch_size=batch_size)
+        test_loader     = test_dataset.to_dataloader(batch_size=batch_size)
+
+#. Instantiate a model using the its :py:meth:`~models.base.BaseModule.from_dataset` method.
+   
+    .. code-block:: python
+
+        # create forecasting model
+        model = LSTMForecaster.from_dataset(train_dataset)
+
+#. Create a :py:class:`lightning.pytorch.trainer.trainer.Trainer` object.
+    
+    .. code-block:: python
+
+        pl.seed_everything(42)
+        max_epochs = 20
+        early_stoping_callback = EarlyStopping(
+            monitor='val/loss', 
+            min_delta=1e-5, 
+            patience=max_epochs//5, 
+            verbose=False, 
+            mode='min'
+        )
+        model_checkpoint_callback = ModelCheckpoint(
+            monitor='val/loss', 
+            mode='min', 
+            save_last=True, 
+            # save_top_k=1
+        )
+        lr_logger = LearningRateMonitor()
+        tb_logger = TensorBoardLogger()
+
+        trainer = Trainer(
+            max_epochs=10,
+            enable_model_summary=True,
+            callbacks=[
+                lr_logger, 
+                early_stoping_callback, 
+                model_checkpoint_callback
+            ],
+            logger=tb_logger,
+            gradient_clip_val=5.,
+        )
+
+#. Start training: ``trainer.fit(...)``
+    
+    .. code-block:: python
+
+        trainer.fit(
+            model=model, 
+            train_dataloaders=train_loader,
+            val_dataloaders=val_loader,
+        )
+        trainer.test(
+            model,
+            ckpt_path='best',
+            dataloaders=test_loader,
+        )
+       
+#. Load the model from the model checkpoint and apply it to new data.
+    
+    .. code-block:: python
+        
+        model_path = "runs/lstm/prod/lightning_logs/version_33/checkpoints/epoch=120-step=1089.ckpt"
+        model = LSTMClassifier.load_from_checkpoint(
+            model_path, 
+            map_location=torch.device('cpu'),
+        )
+        it_ = iter(test_loader)
+        x, y = next(it_)
+        true_predictions = model.tensor_to_predictions(y)
+        predictions = model.predict(x)
+        print(predictions)
+        print(true_predictions)
+       
+The :ref:`Tutorials <tutorials>` section provides detailed guidance and examples on how to work with different datasets and models.
+

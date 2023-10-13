@@ -1,0 +1,50 @@
+﻿TryHardImputer
+==============
+
+.. currentmodule:: united.data.imputers
+
+
+.. autoclass:: TryHardImputer
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+   :inherited-members:
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~TryHardImputer.fit
+      ~TryHardImputer.fit_transform
+      ~TryHardImputer.get_params
+      ~TryHardImputer.set_output
+      ~TryHardImputer.set_params
+      ~TryHardImputer.transform
+   
+   
+
+   
+    
+   
+   
+   
+   

@@ -1,0 +1,33 @@
+﻿MAPE
+====
+
+.. currentmodule:: united.metrics
+
+
+.. autoclass:: MAPE
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~MAPE.forward
+   
+   
+
+   
+    
+   
+   
+   
+   

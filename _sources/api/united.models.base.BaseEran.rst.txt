@@ -1,0 +1,33 @@
+﻿BaseEran
+========
+
+.. currentmodule:: united.models.base
+
+
+.. autoclass:: BaseEran
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~BaseEran.from_dataset
+   
+   
+
+   
+    
+   
+   
+   
+   

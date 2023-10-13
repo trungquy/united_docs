@@ -1,0 +1,33 @@
+﻿RMSE
+====
+
+.. currentmodule:: united.metrics
+
+
+.. autoclass:: RMSE
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~RMSE.forward
+   
+   
+
+   
+    
+   
+   
+   
+   

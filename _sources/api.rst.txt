@@ -1,0 +1,84 @@
+API Reference
+==============
+
+.. currentmodule:: united
+
+
+.. .. autosummary::
+..    :toctree: api
+..    :template: custom-module-template.rst
+..    :recursive:
+
+..    data
+..    models
+..    metrics
+
+
+Data
+------
+
+.. autosummary::
+   :toctree: api
+   :template: custom-class-template.rst
+
+   data.timeseries.TimeSeriesDataset
+   data.timeseries.SensorTimeSeriesDataset
+   data.encoders.NaNLabelEncoder
+   data.encoders.TorchStandardScaler
+   data.imputers.BackwardFillingImputer
+   data.imputers.ForwardFillingImputer
+   data.imputers.ConstantFillingImputer
+   data.imputers.InterpolateImputer
+   data.imputers.TryHardImputer
+   data.imputers.BaseTransformer
+   data.samplers.BySimilarLengthBatchSampler
+   data.timeseries.DatasetProperties
+
+Model
+------
+
+.. autosummary::
+   :toctree: api
+   :template: custom-class-template.rst
+
+   models.forecasting.LSTMForecaster
+   models.forecasting.GraphICForecaster
+   models.forecasting.EranForecaster
+   models.classification.LSTMClassifier
+   models.classification.GraphICClassifier
+   models.classification.EranClassifier
+   models.annotation.LSTMAnnotation
+   models.annotation.TransformerAnnotation
+   models.base.BaseModule
+   models.base.BaseRNNForecaster
+   models.base.Predictor
+   models.base.LinearPredictor
+   models.base.SelfAttentionPredictor
+   models.base.PredictorType
+   models.base.EranEncoder
+   models.base.EncoderDecoderMixins
+   models.base.DecoderOnlyMixins
+   models.base.EncoderOnlyMixins
+   models.base.BaseGraphIC
+   models.base.BaseEran
+
+
+
+
+Metrics
+--------
+
+.. autosummary::
+   :toctree: api
+   :template: custom-class-template.rst
+
+   metrics.SMAPE
+   metrics.RSE
+   metrics.MSE
+   metrics.RMSE
+   metrics.MAE
+   metrics.MAPE
+   metrics.Accuracy
+   metrics.CrossEntropyLoss
+   metrics.BaseMetric
+   

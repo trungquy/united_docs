@@ -1,0 +1,41 @@
+﻿DecoderOnlyMixins
+=================
+
+.. currentmodule:: united.models.base
+
+
+.. autoclass:: DecoderOnlyMixins
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+   :inherited-members:
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~DecoderOnlyMixins.construct_output
+      ~DecoderOnlyMixins.get_sequence_lengths
+      ~DecoderOnlyMixins.get_target_masks
+   
+   
+
+   
+    
+   
+   
+   
+   

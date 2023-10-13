@@ -1,0 +1,50 @@
+﻿BackwardFillingImputer
+======================
+
+.. currentmodule:: united.data.imputers
+
+
+.. autoclass:: BackwardFillingImputer
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+   :inherited-members:
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~BackwardFillingImputer.fit
+      ~BackwardFillingImputer.fit_transform
+      ~BackwardFillingImputer.get_params
+      ~BackwardFillingImputer.set_output
+      ~BackwardFillingImputer.set_params
+      ~BackwardFillingImputer.transform
+   
+   
+
+   
+    
+   
+   
+   
+   

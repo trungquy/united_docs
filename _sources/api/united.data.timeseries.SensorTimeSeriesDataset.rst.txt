@@ -1,0 +1,139 @@
+﻿SensorTimeSeriesDataset
+=======================
+
+.. currentmodule:: united.data.timeseries
+
+
+.. autoclass:: SensorTimeSeriesDataset
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+   :inherited-members:
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~SensorTimeSeriesDataset.calculate_decoder_length
+      ~SensorTimeSeriesDataset.calculate_total_time_steps
+      ~SensorTimeSeriesDataset.check_if_missing_time_step
+      ~SensorTimeSeriesDataset.compute_sequence_length
+      ~SensorTimeSeriesDataset.count_missing_time_steps
+      ~SensorTimeSeriesDataset.expand_ids_with_counter
+      ~SensorTimeSeriesDataset.from_dataset
+      ~SensorTimeSeriesDataset.from_parameters
+      ~SensorTimeSeriesDataset.get_missing_time_step_mask
+      ~SensorTimeSeriesDataset.get_parameters
+      ~SensorTimeSeriesDataset.get_properties
+      ~SensorTimeSeriesDataset.normalize_column_names
+      ~SensorTimeSeriesDataset.to_dataloader
+      ~SensorTimeSeriesDataset.validate_data
+   
+   
+
+   
+    
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~SensorTimeSeriesDataset.cat_names
+      ~SensorTimeSeriesDataset.cat_sizes
+      ~SensorTimeSeriesDataset.cont_names
+      ~SensorTimeSeriesDataset.decoder_cat_names
+      ~SensorTimeSeriesDataset.decoder_cat_positions
+      ~SensorTimeSeriesDataset.decoder_cont_names
+      ~SensorTimeSeriesDataset.decoder_cont_positions
+      ~SensorTimeSeriesDataset.encoder_cat_names
+      ~SensorTimeSeriesDataset.encoder_cat_positions
+      ~SensorTimeSeriesDataset.encoder_cont_names
+      ~SensorTimeSeriesDataset.encoder_cont_positions
+      ~SensorTimeSeriesDataset.features
+      ~SensorTimeSeriesDataset.max_length
+      ~SensorTimeSeriesDataset.min_length
+      ~SensorTimeSeriesDataset.target_cat_names
+      ~SensorTimeSeriesDataset.target_cat_positions
+      ~SensorTimeSeriesDataset.target_cat_sizes
+      ~SensorTimeSeriesDataset.target_cont_names
+      ~SensorTimeSeriesDataset.target_cont_positions
+      ~SensorTimeSeriesDataset.target_positions
+   
+   

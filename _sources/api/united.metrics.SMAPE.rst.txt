@@ -1,0 +1,33 @@
+﻿SMAPE
+=====
+
+.. currentmodule:: united.metrics
+
+
+.. autoclass:: SMAPE
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~SMAPE.forward
+   
+   
+
+   
+    
+   
+   
+   
+   

@@ -1,0 +1,98 @@
+﻿DatasetProperties
+=================
+
+.. currentmodule:: united.data.timeseries
+
+
+.. autoclass:: DatasetProperties
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+   :inherited-members:
+   
+
+   
+   
+   
+   
+   
+
+   
+    
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~DatasetProperties.encoder_names
+      ~DatasetProperties.decoder_names
+      ~DatasetProperties.cat_names
+      ~DatasetProperties.cat_sizes
+      ~DatasetProperties.cont_names
+      ~DatasetProperties.decoder_cat_names
+      ~DatasetProperties.decoder_cat_positions
+      ~DatasetProperties.decoder_cont_names
+      ~DatasetProperties.decoder_cont_positions
+      ~DatasetProperties.encoder_cat_names
+      ~DatasetProperties.encoder_cat_positions
+      ~DatasetProperties.encoder_cont_names
+      ~DatasetProperties.encoder_cont_positions
+      ~DatasetProperties.features
+      ~DatasetProperties.max_length
+      ~DatasetProperties.min_length
+      ~DatasetProperties.target_cat_names
+      ~DatasetProperties.target_cat_positions
+      ~DatasetProperties.target_cat_sizes
+      ~DatasetProperties.target_cont_names
+      ~DatasetProperties.target_cont_positions
+      ~DatasetProperties.target_positions
+   
+   

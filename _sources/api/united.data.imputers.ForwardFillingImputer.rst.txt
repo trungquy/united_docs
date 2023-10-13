@@ -1,0 +1,50 @@
+﻿ForwardFillingImputer
+=====================
+
+.. currentmodule:: united.data.imputers
+
+
+.. autoclass:: ForwardFillingImputer
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+   :inherited-members:
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ForwardFillingImputer.fit
+      ~ForwardFillingImputer.fit_transform
+      ~ForwardFillingImputer.get_params
+      ~ForwardFillingImputer.set_output
+      ~ForwardFillingImputer.set_params
+      ~ForwardFillingImputer.transform
+   
+   
+
+   
+    
+   
+   
+   
+   

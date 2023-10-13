@@ -1,0 +1,38 @@
+﻿PredictorType
+=============
+
+.. currentmodule:: united.models.base
+
+
+.. autoclass:: PredictorType
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+   :inherited-members:
+   
+
+   
+   
+   
+   
+   
+
+   
+    
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~PredictorType.LINEAR
+      ~PredictorType.SELF_ATTENTION
+   
+   

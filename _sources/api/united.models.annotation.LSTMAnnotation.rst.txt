@@ -1,0 +1,36 @@
+﻿LSTMAnnotation
+==============
+
+.. currentmodule:: united.models.annotation
+
+
+.. autoclass:: LSTMAnnotation
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~LSTMAnnotation.construct_input
+      ~LSTMAnnotation.forward
+   
+   
+
+   
+    
+   
+   
+   
+   

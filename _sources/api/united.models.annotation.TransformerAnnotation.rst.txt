@@ -1,0 +1,36 @@
+﻿TransformerAnnotation
+=====================
+
+.. currentmodule:: united.models.annotation
+
+
+.. autoclass:: TransformerAnnotation
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~TransformerAnnotation.construct_input
+      ~TransformerAnnotation.forward
+   
+   
+
+   
+    
+   
+   
+   
+   

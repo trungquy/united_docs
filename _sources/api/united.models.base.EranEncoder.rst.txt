@@ -1,0 +1,57 @@
+﻿EranEncoder
+===========
+
+.. currentmodule:: united.models.base
+
+
+.. autoclass:: EranEncoder
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~EranEncoder.forward
+      ~EranEncoder.gen_dynamic_adj
+      ~EranEncoder.gen_init_adj
+      ~EranEncoder.gen_static_adj
+      ~EranEncoder.get_dynamic_adj
+      ~EranEncoder.get_init_adj
+      ~EranEncoder.get_static_adj
+      ~EranEncoder.reset_param
+      ~EranEncoder.reset_parameters
+   
+   
+
+   
+    
+   
+   
+   
+   

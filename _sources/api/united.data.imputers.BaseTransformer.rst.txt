@@ -1,0 +1,44 @@
+﻿BaseTransformer
+===============
+
+.. currentmodule:: united.data.imputers
+
+
+.. autoclass:: BaseTransformer
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+   :inherited-members:
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~BaseTransformer.fit_transform
+      ~BaseTransformer.get_params
+      ~BaseTransformer.set_output
+      ~BaseTransformer.set_params
+   
+   
+
+   
+    
+   
+   
+   
+   

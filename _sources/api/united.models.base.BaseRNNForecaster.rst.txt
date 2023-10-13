@@ -1,0 +1,42 @@
+﻿BaseRNNForecaster
+=================
+
+.. currentmodule:: united.models.base
+
+
+.. autoclass:: BaseRNNForecaster
+   :members:
+   :show-inheritance:
+   :exclude-members: __init__
+     
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~BaseRNNForecaster.construct_decoder_input_step
+      ~BaseRNNForecaster.construct_input
+      ~BaseRNNForecaster.forward
+      ~BaseRNNForecaster.get_rnn_net
+   
+   
+
+   
+    
+   
+   
+   
+   
