@@ -1,0 +1,38 @@
+# Software Architecture
+
+## Data
+
+There are two main dataset classes `TimeSeriesDataset` and `SensorTimeSeriesDataset` for convinient to work with time series data in `united` library.
+
+### TimeSeriesDataset class
+
+`TimeSeriesDataset` provide a unified data structure for time series dataset. It support many common tasks when dealing with time series data such as:
+
+- Scaling and encoding of variables.
+- Normalizing the target variables.
+- Easy to create validation/testing datasets from a `TimeSeriesDataset` instance.
+- Support multivariate input with mixed data types (continuos and/or categorical types)
+- Support multiple time series.
+- Support missing data:
+  - Handle missing data at rows level which means missing entire time step and missing data at variable level (missing some values at a particular time step).
+  - Built-in imputing strategies: forward-filling, backward-filling, interpolation, constant/mean filling. User can also able to use any advanced scikit-learn compatible imputers such as `KNNImputer` or `IteractiveImputer`
+  - Handle unknown values for categorical variables, it is useful when dealing with categorical variables, some categories appear on validation or test data but not training data.
+- Support common model architecture types for sequence task such as encoder-decoder, encoder-only, decoder-only. User can decide which architecture by assign appropriate values for `min_encoder_length`, `max_encoder_length`, `min_decoder_length`, `min_decoder_length` when initialize dataset instance.
+
+![TimeSeriesDataset setting for model architecture](_static/model_architectures.png)
+
+### SensorTimeSeriesDataset class
+
+`SensorTimeSeriesDataset` is basically `TimeSeriesDataset` with extra information about list of sensor columns and its corresponding Dataloader not only return data sample but also the valid mask, a boolean Tensor where True if data is available and False if data is missing. For some models, such as GraphIC, can utilize this missing mask information into account for their prediction.
+
+## Model
+
+`united` has a flexible architecture allows developer easy to integrate their own time series model into framework. All models in united are inherited from `BaseModule` class. `BaseModule` is an extension of `LightningModule` support many common tasks for sequence model developer such as:
+
+- Generic training/testing steps, when developing new model that extent from `BaseModule`, user just need to focus on model architecture, `united` will handle the training, validation and testing loop automatically.
+- Calculate validation/testing common metrics for continuos and categorical targets.
+- Support Tensorboard logging for logging training progress.
+- Correctly handle normalization for target variables.
+- Easy to implement common sequential model architect types: encoder-decoder, encoder-only, decoder-only models.
+
+![Model class diagram](_static/models.png)
