@@ -1,0 +1,31 @@
+Installation
+===============
+
+.. _installation:
+
+
+.. toctree::
+   :titlesonly:
+
+
+Installation
+--------------
+
+.. _install:
+
+- Install from git repository:
+
+.. code-block:: bash
+    
+    conda create --name united python=3.10
+    conda activate united
+    pip install https://github.com/trungquy/united
+
+- Install from local source folder:
+
+.. code:: bash
+    
+    conda create --name united python=3.10
+    conda activate united
+    cd <united source folder>
+    pip install -e .

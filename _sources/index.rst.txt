@@ -22,12 +22,33 @@ Contents
    :maxdepth: 1
    :hidden:
 
+
+   installation
    getting_started
+   core
    tutorials
    api
 
 .. grid:: 1 2 2 2
     :gutter: 3
+
+    .. grid-item-card::
+        :text-align: center
+
+        Installation
+
+        ^^^
+
+        Install ``united``.
+
+        +++
+
+        .. button-ref:: installation
+            :color: primary
+            :click-parent:
+            :expand:
+
+            Installation
 
     .. grid-item-card::
         :text-align: center
@@ -46,6 +67,24 @@ Contents
             :expand:
 
             Get Started
+    
+    .. grid-item-card::
+        :text-align: center
+
+        Core modules
+
+        ^^^
+
+        Core ``united`` modules.
+
+        +++
+
+        .. button-ref:: core
+            :color: primary
+            :click-parent:
+            :expand:
+
+            Core modules
 
     .. grid-item-card::
         :text-align: center

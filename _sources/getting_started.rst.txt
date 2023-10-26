@@ -7,27 +7,6 @@ Get started
 .. toctree::
    :titlesonly:
 
-Installation
---------------
-
-.. _install:
-
-- Install from git repo:
-
-.. code-block:: bash
-    
-    conda create --name united python=3.10
-    conda activate united
-    pip install https://github.com/trungquy/united
-
-- Install from source code:
-
-.. code:: bash
-    
-    conda create --name united python=3.10
-    conda activate united
-    cd <united source folder>
-    pip install -e .
 
 Common workflow working with `united`
 --------------------------------------
@@ -91,7 +70,7 @@ The general setup for training and testing a model as following:
         val_loader      = val_dataset.to_dataloader(batch_size=batch_size)
         test_loader     = test_dataset.to_dataloader(batch_size=batch_size)
 
-#. Instantiate a model using the its :py:meth:`~models.base.BaseModule.from_dataset` method.
+#. Instantiate a model using :py:meth:`~models.base.BaseModule.from_dataset` method.
    
     .. code-block:: python
 

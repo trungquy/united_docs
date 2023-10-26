@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Tutorials" href="tutorials.html" /><link rel="prev" title="Get started" href="getting_started.html" />
 
     <link rel="shortcut icon" href="_static/logo2.png"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.08.19 -->
-        <title>Models - united documentation</title>
+        <title>Core modules - united documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=362ab14a" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
@@ -135,7 +135,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -158,14 +158,14 @@
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  <ul>
+  <ul class="current">
 <li class="toctree-l1 has-children"><a class="reference internal" href="installation.html">Installation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Installation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="getting_started.html">Get started</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Get started</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="core.html">Core modules</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Core modules</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="tutorials.html">Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Tutorials</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="examples/electricity/forecasting.html">Time series forecasting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples/basic_motions/classification.html">Time series classification</a></li>
@@ -244,16 +244,95 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main">
-          <section id="models">
-<h1>Models<a class="headerlink" href="#models" title="Link to this heading">#</a></h1>
-<div class="toctree-wrapper compound" id="id1">
-</div>
+          <section id="core-modules">
+<h1>Core modules<a class="headerlink" href="#core-modules" title="Link to this heading">#</a></h1>
+<section id="data">
+<h2>Data<a class="headerlink" href="#data" title="Link to this heading">#</a></h2>
+<p>There are two main dataset classes <a class="reference internal" href="api/united.data.timeseries.TimeSeriesDataset.html#united.data.timeseries.TimeSeriesDataset" title="united.data.timeseries.TimeSeriesDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">TimeSeriesDataset</span></code></a> and
+<a class="reference internal" href="api/united.data.timeseries.SensorTimeSeriesDataset.html#united.data.timeseries.SensorTimeSeriesDataset" title="united.data.timeseries.SensorTimeSeriesDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">SensorTimeSeriesDataset</span></code></a> for convenient to work with time series data
+in <code class="docutils literal notranslate"><span class="pre">united</span></code> library.</p>
+<section id="timeseriesdataset-class">
+<h3>TimeSeriesDataset class<a class="headerlink" href="#timeseriesdataset-class" title="Link to this heading">#</a></h3>
+<p><a class="reference internal" href="api/united.data.timeseries.TimeSeriesDataset.html#united.data.timeseries.TimeSeriesDataset" title="united.data.timeseries.TimeSeriesDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">TimeSeriesDataset</span></code></a> provide a unified data structure for time series
+dataset. It support many common tasks when dealing with time series data
+such as:</p>
+<ul class="simple">
+<li><p>Scaling and encoding of variables.</p></li>
+<li><p>Normalizing the target variables.</p></li>
+<li><p>Easy to create validation/testing datasets from a
+<a class="reference internal" href="api/united.data.timeseries.TimeSeriesDataset.html#united.data.timeseries.TimeSeriesDataset" title="united.data.timeseries.TimeSeriesDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">TimeSeriesDataset</span></code></a> instance.</p></li>
+<li><p>Support multivariate input with mixed data types (continuos and/or
+categorical types)</p></li>
+<li><p>Support multiple time series.</p></li>
+<li><p>Support missing data:</p>
+<ul>
+<li><p>Handle missing data at rows level which means missing entire time
+step and missing data at variable level (missing some values at a
+particular time step).</p></li>
+<li><p>Built-in imputing strategies: forward-filling, backward-filling,
+interpolation, constant/mean filling. User can also able to use
+any third-party imputers such as
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.KNNImputer.html#sklearn.impute.KNNImputer" title="(in scikit-learn v1.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.impute.KNNImputer</span></code></a> or <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.IterativeImputer.html#sklearn.impute.IterativeImputer" title="(in scikit-learn v1.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.impute.IterativeImputer</span></code></a></p></li>
+<li><p>Handle unknown values for categorical variables, it is useful when
+dealing with categorical variables, some categories appear on
+validation or test data but not training data.</p></li>
+</ul>
+</li>
+<li><p>Support common model architecture types for sequence task such as
+encoder-decoder, encoder-only, decoder-only. User can decide which
+architecture by assign appropriate values for <code class="docutils literal notranslate"><span class="pre">min_encoder_length</span></code>,
+<code class="docutils literal notranslate"><span class="pre">max_encoder_length</span></code>, <code class="docutils literal notranslate"><span class="pre">min_decoder_length</span></code>,
+<code class="docutils literal notranslate"><span class="pre">min_decoder_length</span></code> when initialize dataset instance.</p></li>
+</ul>
+<figure class="align-default" id="id1">
+<img alt="TimeSeriesDataset setting for model architecture" src="_images/model_architectures.png" />
+<figcaption>
+<p><span class="caption-text">TimeSeriesDataset setting for model architecture</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="sensortimeseriesdataset-class">
+<h3>SensorTimeSeriesDataset class<a class="headerlink" href="#sensortimeseriesdataset-class" title="Link to this heading">#</a></h3>
+<p><a class="reference internal" href="api/united.data.timeseries.SensorTimeSeriesDataset.html#united.data.timeseries.SensorTimeSeriesDataset" title="united.data.timeseries.SensorTimeSeriesDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">SensorTimeSeriesDataset</span></code></a> is basically <a class="reference internal" href="api/united.data.timeseries.TimeSeriesDataset.html#united.data.timeseries.TimeSeriesDataset" title="united.data.timeseries.TimeSeriesDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">TimeSeriesDataset</span></code></a> with
+extra information about list of sensor columns and its corresponding
+Dataloader not only return data sample but also the valid mask, a
+boolean Tensor where True if data is available and False if data is
+missing. For some models, such as GraphIC, can utilize this missing mask
+information into account for their prediction.</p>
+</section>
+</section>
+<section id="model">
+<h2>Model<a class="headerlink" href="#model" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">united</span></code> has a flexible architecture allows developer easy to
+integrate their own time series model into framework. All models in
+united are inherited from <a class="reference internal" href="api/united.models.base.BaseModule.html#united.models.base.BaseModule" title="united.models.base.BaseModule"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModule</span></code></a> class. <a class="reference internal" href="api/united.models.base.BaseModule.html#united.models.base.BaseModule" title="united.models.base.BaseModule"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModule</span></code></a> is an
+extension of <code class="docutils literal notranslate"><span class="pre">LightningModule</span></code> support many common tasks for sequence
+model developer such as:</p>
+<ul class="simple">
+<li><p>Generic training/testing steps, when developing new model that extent
+from <a class="reference internal" href="api/united.models.base.BaseModule.html#united.models.base.BaseModule" title="united.models.base.BaseModule"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModule</span></code></a>, user just need to focus on model architecture,
+<code class="docutils literal notranslate"><span class="pre">united</span></code> will handle the training, validation and testing loop
+automatically.</p></li>
+<li><p>Calculate validation/testing common metrics for continuos and
+categorical targets.</p></li>
+<li><p>Support Tensorboard logging for logging training progress.</p></li>
+<li><p>Correctly handle normalization for target variables.</p></li>
+<li><p>Easy to implement common sequential model architect types:
+encoder-decoder, encoder-only, decoder-only models.</p></li>
+</ul>
+<figure class="align-default" id="id2">
+<img alt="Model class diagram" src="_images/models.png" />
+<figcaption>
+<p><span class="caption-text">Model class diagram</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
 </section>
 
         </article>
@@ -261,8 +340,26 @@
       <footer>
         
         <div class="related-pages">
-          
-          
+          <a class="next-page" href="tutorials.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Tutorials</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="getting_started.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Get started</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -281,8 +378,32 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Core modules</a><ul>
+<li><a class="reference internal" href="#data">Data</a><ul>
+<li><a class="reference internal" href="#timeseriesdataset-class">TimeSeriesDataset class</a></li>
+<li><a class="reference internal" href="#sensortimeseriesdataset-class">SensorTimeSeriesDataset class</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#model">Model</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

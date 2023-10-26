@@ -10,7 +10,7 @@
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=362ab14a" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
-    <link rel="stylesheet" type="text/css" href="../../_static/nbsphinx-code-cells.css?v=2aa19091" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nbsphinx-code-cells.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=36a5483c" />
     
     
@@ -160,16 +160,20 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../getting_started.html">Get started</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Get started</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../installation.html">Installation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Installation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../tutorials.html">Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Tutorials</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../getting_started.html">Get started</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Get started</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../core.html">Core modules</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../tutorials.html">Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Tutorials</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../electricity/forecasting.html">Time series forecasting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../basic_motions/classification.html">Time series classification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../human_activity_recognition/annotation.html">Time series annotation</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../api.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of API Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../api.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of API Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../api/united.data.timeseries.TimeSeriesDataset.html">TimeSeriesDataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/united.data.timeseries.SensorTimeSeriesDataset.html">SensorTimeSeriesDataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/united.data.encoders.NaNLabelEncoder.html">NaNLabelEncoder</a></li>
@@ -247,8 +251,8 @@
           </label>
         </div>
         <article role="main">
-          <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+          <div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -286,19 +290,10 @@
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-The autoreload extension is already loaded. To reload it, use:
-  %reload_ext autoreload
-</pre></div></div>
-</div>
 <section id="Parameters">
 <h1>Parameters<a class="headerlink" href="#Parameters" title="Link to this heading">#</a></h1>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model_name</span> <span class="o">=</span> <span class="s2">&quot;eran&quot;</span> <span class="c1"># eran, graphic</span>
@@ -310,7 +305,7 @@ The autoreload extension is already loaded. To reload it, use:
 <section id="Load-data">
 <h1>Load data<a class="headerlink" href="#Load-data" title="Link to this heading">#</a></h1>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">glob</span>
@@ -388,7 +383,7 @@ The autoreload extension is already loaded. To reload it, use:
 <section id="Preprocessing">
 <h1>Preprocessing<a class="headerlink" href="#Preprocessing" title="Link to this heading">#</a></h1>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">CYCLIC_COLS</span> <span class="o">=</span> <span class="p">[</span>
@@ -430,7 +425,7 @@ The autoreload extension is already loaded. To reload it, use:
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">united.utils</span> <span class="kn">import</span> <span class="n">convert_dataframe_from_row_sensors_to_column_sensors</span>
@@ -505,29 +500,29 @@ ic| train_df.shape: (87552, 37)
     val_df.shape: (8640, 37)
     test_df.shape: (8928, 37)
 ic| len(sensors): 23
-ic| sensors: [&#39;me_43.85_-70.25_2006_DPV_23MW&#39;,
-              &#39;me_43.15_-70.75_2006_UPV_9MW&#39;,
-              &#39;me_43.65_-70.55_2006_UPV_66MW&#39;,
-              &#39;me_44.25_-69.85_2006_UPV_19MW&#39;,
-              &#39;me_44.25_-70.35_2006_UPV_94MW&#39;,
-              &#39;me_43.55_-70.85_2006_UPV_94MW&#39;,
-              &#39;me_43.35_-70.85_2006_UPV_56MW&#39;,
-              &#39;me_43.85_-70.35_2006_DPV_23MW&#39;,
-              &#39;me_43.85_-70.55_2006_UPV_85MW&#39;,
-              &#39;me_43.55_-70.65_2006_DPV_26MW&#39;,
-              &#39;me_44.45_-69.75_2006_DPV_31MW&#39;,
-              &#39;me_43.95_-70.25_2006_UPV_28MW&#39;,
-              &#39;me_43.75_-70.75_2006_UPV_66MW&#39;,
-              &#39;me_43.95_-69.75_2006_UPV_19MW&#39;,
-              &#39;me_43.75_-70.35_2006_UPV_19MW&#39;,
-              &#39;me_43.95_-70.35_2006_DPV_23MW&#39;,
+ic| sensors: [&#39;me_43.45_-70.65_2006_DPV_26MW&#39;,
               &#39;me_43.25_-70.65_2006_UPV_85MW&#39;,
-              &#39;me_43.45_-70.65_2006_DPV_26MW&#39;,
-              &#39;me_43.45_-70.65_2006_UPV_38MW&#39;,
-              &#39;me_44.25_-69.65_2006_UPV_9MW&#39;,
-              &#39;me_43.95_-69.85_2006_DPV_9MW&#39;,
+              &#39;me_43.55_-70.65_2006_DPV_26MW&#39;,
+              &#39;me_43.95_-69.75_2006_UPV_19MW&#39;,
+              &#39;me_43.35_-70.85_2006_UPV_56MW&#39;,
+              &#39;me_43.85_-70.55_2006_UPV_85MW&#39;,
+              &#39;me_44.25_-70.35_2006_UPV_94MW&#39;,
+              &#39;me_44.25_-69.85_2006_UPV_19MW&#39;,
+              &#39;me_43.85_-70.35_2006_DPV_23MW&#39;,
               &#39;me_44.15_-70.05_2006_UPV_19MW&#39;,
-              &#39;me_44.15_-70.25_2006_DPV_27MW&#39;]
+              &#39;me_43.75_-70.75_2006_UPV_66MW&#39;,
+              &#39;me_43.55_-70.85_2006_UPV_94MW&#39;,
+              &#39;me_43.95_-70.25_2006_UPV_28MW&#39;,
+              &#39;me_43.65_-70.55_2006_UPV_66MW&#39;,
+              &#39;me_43.95_-70.35_2006_DPV_23MW&#39;,
+              &#39;me_44.15_-70.25_2006_DPV_27MW&#39;,
+              &#39;me_44.25_-69.65_2006_UPV_9MW&#39;,
+              &#39;me_43.85_-70.25_2006_DPV_23MW&#39;,
+              &#39;me_43.75_-70.35_2006_UPV_19MW&#39;,
+              &#39;me_43.95_-69.85_2006_DPV_9MW&#39;,
+              &#39;me_43.15_-70.75_2006_UPV_9MW&#39;,
+              &#39;me_43.45_-70.65_2006_UPV_38MW&#39;,
+              &#39;me_44.45_-69.75_2006_DPV_31MW&#39;]
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -1038,7 +1033,7 @@ ic| sensors: [&#39;me_43.85_-70.25_2006_DPV_23MW&#39;,
 </div></div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># train_df[&#39;group_id&#39;] = &#39;x&#39;</span>
@@ -1327,7 +1322,7 @@ HPU available: False, using: 0 HPUs
 <section id="Inspect-data-and-model">
 <h1>Inspect data and model<a class="headerlink" href="#Inspect-data-and-model" title="Link to this heading">#</a></h1>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">IS_LOCAL</span><span class="p">:</span>
@@ -1350,15 +1345,15 @@ HPU available: False, using: 0 HPUs
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-encoder torch.Size([16, 168, 31])
-encoder_lengths torch.Size([16])
-decoder torch.Size([16, 24, 8])
-decoder_lengths torch.Size([16])
-encoder_mask torch.Size([16, 168, 31])
-decoder_mask torch.Size([16, 24, 8])
-encoder torch.Size([16, 168, 23])
-decoder torch.Size([16, 24, 23])
-Loss: 13.938248634338379
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/ntquy/OneDrive_Deakin/DAIRNet-Proj/code/pytorch-forecasting-extras/examples/pv2006/graphic_eran.ipynb Cell 16</span> line <span class="ansi-cyan-fg">2
+</span><span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/home/ntquy/OneDrive_Deakin/DAIRNet-Proj/code/pytorch-forecasting-extras/examples/pv2006/graphic_eran.ipynb#X21sZmlsZQ%3D%3D?line=0&#39;&gt;1&lt;/a&gt;</span> if IS_LOCAL:
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell:/home/ntquy/OneDrive_Deakin/DAIRNet-Proj/code/pytorch-forecasting-extras/examples/pv2006/graphic_eran.ipynb#X21sZmlsZQ%3D%3D?line=1&#39;&gt;2&lt;/a&gt;</span>     x, y = next(it_)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/home/ntquy/OneDrive_Deakin/DAIRNet-Proj/code/pytorch-forecasting-extras/examples/pv2006/graphic_eran.ipynb#X21sZmlsZQ%3D%3D?line=2&#39;&gt;3&lt;/a&gt;</span>     for name, val in x.items():
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/home/ntquy/OneDrive_Deakin/DAIRNet-Proj/code/pytorch-forecasting-extras/examples/pv2006/graphic_eran.ipynb#X21sZmlsZQ%3D%3D?line=3&#39;&gt;4&lt;/a&gt;</span>         print(name, val.shape)
+
+<span class="ansi-red-fg">NameError</span>: name &#39;it_&#39; is not defined
 </pre></div></div>
 </div>
 <div class="nbinput nblast docutils container">
@@ -1521,15 +1516,16 @@ File <span class="ansi-green-fg">~/opt/anaconda3/envs/ts/lib/python3.10/site-pac
 <section id="Inference-with-trained-models">
 <h1>Inference with trained models<a class="headerlink" href="#Inference-with-trained-models" title="Link to this heading">#</a></h1>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">united.models.eran</span> <span class="kn">import</span> <span class="n">EranForecaster</span>
-<span class="kn">from</span> <span class="nn">united.models.graphic</span> <span class="kn">import</span> <span class="n">GraphICForecaster</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># from united.models.eran import EranForecaster</span>
+<span class="c1"># from united.models.graphic import GraphICForecaster</span>
+<span class="kn">from</span> <span class="nn">united.models.forecasting</span> <span class="kn">import</span> <span class="n">EranForecaster</span><span class="p">,</span> <span class="n">GraphICForecaster</span>
 <span class="kn">from</span> <span class="nn">united.data.timeseries</span> <span class="kn">import</span> <span class="n">SensorTimeSeriesDataset</span>
 
 <span class="k">if</span> <span class="n">model_name</span> <span class="o">==</span> <span class="s1">&#39;eran&#39;</span><span class="p">:</span>
-    <span class="n">model_path</span> <span class="o">=</span> <span class="s1">&#39;runs/graphic/prod/lightning_logs/version_15/checkpoints/epoch=0-step=21840.ckpt&#39;</span>
+    <span class="n">model_path</span> <span class="o">=</span> <span class="s1">&#39;runs/eran/prod/lightning_logs/version_8/checkpoints/epoch=2-step=2046.ckpt&#39;</span>
     <span class="n">model</span> <span class="o">=</span> <span class="n">EranForecaster</span><span class="o">.</span><span class="n">load_from_checkpoint</span><span class="p">(</span>
         <span class="n">model_path</span><span class="p">,</span>
         <span class="n">map_location</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s1">&#39;cpu&#39;</span><span class="p">),</span>
@@ -1559,58 +1555,72 @@ File <span class="ansi-green-fg">~/opt/anaconda3/envs/ts/lib/python3.10/site-pac
 </pre></div>
 </div>
 </div>
-<div class="nboutput docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-{&#39;group_ids&#39;: &#39;group_id&#39;, &#39;time_idx&#39;: &#39;time_idx&#39;, &#39;min_encoder_length&#39;: 168, &#39;max_encoder_length&#39;: 168, &#39;min_decoder_length&#39;: 24, &#39;max_decoder_length&#39;: 24, &#39;sensors&#39;: [&#39;me_43_15_-70_75_2006_UPV_9MW&#39;, &#39;me_43_85_-70_25_2006_DPV_23MW&#39;, &#39;me_43_95_-69_75_2006_UPV_19MW&#39;, &#39;me_43_45_-70_65_2006_UPV_38MW&#39;, &#39;me_43_85_-70_35_2006_DPV_23MW&#39;, &#39;me_43_25_-70_65_2006_UPV_85MW&#39;, &#39;me_44_45_-69_75_2006_DPV_31MW&#39;, &#39;me_43_45_-70_65_2006_DPV_26MW&#39;, &#39;me_43_65_-70_55_2006_UPV_66MW&#39;, &#39;me_44_25_-69_85_2006_UPV_19MW&#39;, &#39;me_44_25_-70_35_2006_UPV_94MW&#39;, &#39;me_43_35_-70_85_2006_UPV_56MW&#39;, &#39;me_44_25_-69_65_2006_UPV_9MW&#39;, &#39;me_43_75_-70_35_2006_UPV_19MW&#39;, &#39;me_43_95_-70_25_2006_UPV_28MW&#39;, &#39;me_43_85_-70_55_2006_UPV_85MW&#39;, &#39;me_44_15_-70_05_2006_UPV_19MW&#39;, &#39;me_43_55_-70_85_2006_UPV_94MW&#39;, &#39;me_43_55_-70_65_2006_DPV_26MW&#39;, &#39;me_43_95_-69_85_2006_DPV_9MW&#39;, &#39;me_43_75_-70_75_2006_UPV_66MW&#39;, &#39;me_43_95_-70_35_2006_DPV_23MW&#39;, &#39;me_44_15_-70_25_2006_DPV_27MW&#39;, &#39;minute&#39;, &#39;hour&#39;, &#39;day&#39;, &#39;day_of_week&#39;], &#39;encoder_variables&#39;: [&#39;me_43_15_-70_75_2006_UPV_9MW&#39;, &#39;me_43_85_-70_25_2006_DPV_23MW&#39;, &#39;me_43_95_-69_75_2006_UPV_19MW&#39;, &#39;me_43_45_-70_65_2006_UPV_38MW&#39;, &#39;me_43_85_-70_35_2006_DPV_23MW&#39;, &#39;me_43_25_-70_65_2006_UPV_85MW&#39;, &#39;me_44_45_-69_75_2006_DPV_31MW&#39;, &#39;me_43_45_-70_65_2006_DPV_26MW&#39;, &#39;me_43_65_-70_55_2006_UPV_66MW&#39;, &#39;me_44_25_-69_85_2006_UPV_19MW&#39;, &#39;me_44_25_-70_35_2006_UPV_94MW&#39;, &#39;me_43_35_-70_85_2006_UPV_56MW&#39;, &#39;me_44_25_-69_65_2006_UPV_9MW&#39;, &#39;me_43_75_-70_35_2006_UPV_19MW&#39;, &#39;me_43_95_-70_25_2006_UPV_28MW&#39;, &#39;me_43_85_-70_55_2006_UPV_85MW&#39;, &#39;me_44_15_-70_05_2006_UPV_19MW&#39;, &#39;me_43_55_-70_85_2006_UPV_94MW&#39;, &#39;me_43_55_-70_65_2006_DPV_26MW&#39;, &#39;me_43_95_-69_85_2006_DPV_9MW&#39;, &#39;me_43_75_-70_75_2006_UPV_66MW&#39;, &#39;me_43_95_-70_35_2006_DPV_23MW&#39;, &#39;me_44_15_-70_25_2006_DPV_27MW&#39;, &#39;minute&#39;, &#39;hour&#39;, &#39;day&#39;, &#39;day_of_week&#39;], &#39;decoder_variables&#39;: [&#39;minute&#39;, &#39;hour&#39;, &#39;day&#39;, &#39;day_of_week&#39;], &#39;targets&#39;: [&#39;me_43_15_-70_75_2006_UPV_9MW&#39;, &#39;me_43_85_-70_25_2006_DPV_23MW&#39;, &#39;me_43_95_-69_75_2006_UPV_19MW&#39;, &#39;me_43_45_-70_65_2006_UPV_38MW&#39;, &#39;me_43_85_-70_35_2006_DPV_23MW&#39;, &#39;me_43_25_-70_65_2006_UPV_85MW&#39;, &#39;me_44_45_-69_75_2006_DPV_31MW&#39;, &#39;me_43_45_-70_65_2006_DPV_26MW&#39;, &#39;me_43_65_-70_55_2006_UPV_66MW&#39;, &#39;me_44_25_-69_85_2006_UPV_19MW&#39;, &#39;me_44_25_-70_35_2006_UPV_94MW&#39;, &#39;me_43_35_-70_85_2006_UPV_56MW&#39;, &#39;me_44_25_-69_65_2006_UPV_9MW&#39;, &#39;me_43_75_-70_35_2006_UPV_19MW&#39;, &#39;me_43_95_-70_25_2006_UPV_28MW&#39;, &#39;me_43_85_-70_55_2006_UPV_85MW&#39;, &#39;me_44_15_-70_05_2006_UPV_19MW&#39;, &#39;me_43_55_-70_85_2006_UPV_94MW&#39;, &#39;me_43_55_-70_65_2006_DPV_26MW&#39;, &#39;me_43_95_-69_85_2006_DPV_9MW&#39;, &#39;me_43_75_-70_75_2006_UPV_66MW&#39;, &#39;me_43_95_-70_35_2006_DPV_23MW&#39;, &#39;me_44_15_-70_25_2006_DPV_27MW&#39;], &#39;static_variables&#39;: [], &#39;training&#39;: True, &#39;random_length&#39;: True, &#39;scalers&#39;: {&#39;minute&#39;: NaNLabelEncoder, &#39;day&#39;: NaNLabelEncoder, &#39;hour&#39;: NaNLabelEncoder, &#39;day_of_week&#39;: NaNLabelEncoder, &#39;me_43_45_-70_65_2006_UPV_38MW&#39;: StandardScaler(), &#39;me_43_95_-69_75_2006_UPV_19MW&#39;: StandardScaler(), &#39;me_43_95_-70_25_2006_UPV_28MW&#39;: StandardScaler(), &#39;me_43_85_-70_55_2006_UPV_85MW&#39;: StandardScaler(), &#39;me_43_45_-70_65_2006_DPV_26MW&#39;: StandardScaler(), &#39;me_43_55_-70_85_2006_UPV_94MW&#39;: StandardScaler(), &#39;me_43_35_-70_85_2006_UPV_56MW&#39;: StandardScaler(), &#39;me_43_65_-70_55_2006_UPV_66MW&#39;: StandardScaler(), &#39;me_44_45_-69_75_2006_DPV_31MW&#39;: StandardScaler(), &#39;me_44_25_-70_35_2006_UPV_94MW&#39;: StandardScaler(), &#39;me_44_15_-70_05_2006_UPV_19MW&#39;: StandardScaler(), &#39;me_43_55_-70_65_2006_DPV_26MW&#39;: StandardScaler(), &#39;me_43_95_-69_85_2006_DPV_9MW&#39;: StandardScaler(), &#39;me_43_95_-70_35_2006_DPV_23MW&#39;: StandardScaler(), &#39;me_43_15_-70_75_2006_UPV_9MW&#39;: StandardScaler(), &#39;me_44_25_-69_65_2006_UPV_9MW&#39;: StandardScaler(), &#39;me_44_25_-69_85_2006_UPV_19MW&#39;: StandardScaler(), &#39;me_43_75_-70_35_2006_UPV_19MW&#39;: StandardScaler(), &#39;me_43_25_-70_65_2006_UPV_85MW&#39;: StandardScaler(), &#39;me_43_85_-70_25_2006_DPV_23MW&#39;: StandardScaler(), &#39;me_43_85_-70_35_2006_DPV_23MW&#39;: StandardScaler(), &#39;me_43_75_-70_75_2006_UPV_66MW&#39;: StandardScaler(), &#39;me_44_15_-70_25_2006_DPV_27MW&#39;: StandardScaler()}, &#39;target_normalizers&#39;: {&#39;me_43_15_-70_75_2006_UPV_9MW&#39;: StandardScaler(), &#39;me_43_85_-70_25_2006_DPV_23MW&#39;: StandardScaler(), &#39;me_43_95_-69_75_2006_UPV_19MW&#39;: StandardScaler(), &#39;me_43_45_-70_65_2006_UPV_38MW&#39;: StandardScaler(), &#39;me_43_85_-70_35_2006_DPV_23MW&#39;: StandardScaler(), &#39;me_43_25_-70_65_2006_UPV_85MW&#39;: StandardScaler(), &#39;me_44_45_-69_75_2006_DPV_31MW&#39;: StandardScaler(), &#39;me_43_45_-70_65_2006_DPV_26MW&#39;: StandardScaler(), &#39;me_43_65_-70_55_2006_UPV_66MW&#39;: StandardScaler(), &#39;me_44_25_-69_85_2006_UPV_19MW&#39;: StandardScaler(), &#39;me_44_25_-70_35_2006_UPV_94MW&#39;: StandardScaler(), &#39;me_43_35_-70_85_2006_UPV_56MW&#39;: StandardScaler(), &#39;me_44_25_-69_65_2006_UPV_9MW&#39;: StandardScaler(), &#39;me_43_75_-70_35_2006_UPV_19MW&#39;: StandardScaler(), &#39;me_43_95_-70_25_2006_UPV_28MW&#39;: StandardScaler(), &#39;me_43_85_-70_55_2006_UPV_85MW&#39;: StandardScaler(), &#39;me_44_15_-70_05_2006_UPV_19MW&#39;: StandardScaler(), &#39;me_43_55_-70_85_2006_UPV_94MW&#39;: StandardScaler(), &#39;me_43_55_-70_65_2006_DPV_26MW&#39;: StandardScaler(), &#39;me_43_95_-69_85_2006_DPV_9MW&#39;: StandardScaler(), &#39;me_43_75_-70_75_2006_UPV_66MW&#39;: StandardScaler(), &#39;me_43_95_-70_35_2006_DPV_23MW&#39;: StandardScaler(), &#39;me_44_15_-70_25_2006_DPV_27MW&#39;: StandardScaler()}, &#39;imputers&#39;: None, &#39;add_na&#39;: False, &#39;ignore_na&#39;: False, &#39;allow_missing_time_steps&#39;: False, &#39;unknown_value&#39;: nan, &#39;non_overlapped_windows&#39;: False, &#39;return_missing_mask&#39;: True}
-</pre></div></div>
-</div>
-<div class="nboutput docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"model_id": "feb3b3cf11b74d419d4546ee9d4c322b", "version_major": 2, "version_minor": 0}</script></div>
-</div>
-<div class="nboutput docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"model_id": "1322a4f1b2624c80bfad03e968a2796e", "version_major": 2, "version_minor": 0}</script></div>
-</div>
-<div class="nboutput docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-Finished Indexing in 0.91(s)
-Preprocessing ...
-</pre></div></div>
-</div>
-<div class="nboutput docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area stderr docutils container">
-<div class="highlight"><pre>
-ic| len(test_dataset): 8736
-ic| len(test_loader): 2184
-</pre></div></div>
-</div>
-<div class="nboutput docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-Done
-</pre></div></div>
-</div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-2184
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">RuntimeError</span>                              Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/ntquy/OneDrive_Deakin/DAIRNet-Proj/code/pytorch-forecasting-extras/examples/pv2006/graphic_eran.ipynb Cell 21</span> line <span class="ansi-cyan-fg">8
+</span><span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/home/ntquy/OneDrive_Deakin/DAIRNet-Proj/code/pytorch-forecasting-extras/examples/pv2006/graphic_eran.ipynb#X62sZmlsZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span> if model_name == &#39;eran&#39;:
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/home/ntquy/OneDrive_Deakin/DAIRNet-Proj/code/pytorch-forecasting-extras/examples/pv2006/graphic_eran.ipynb#X62sZmlsZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span>     model_path = &#39;runs/eran/prod/lightning_logs/version_8/checkpoints/epoch=2-step=2046.ckpt&#39;
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell:/home/ntquy/OneDrive_Deakin/DAIRNet-Proj/code/pytorch-forecasting-extras/examples/pv2006/graphic_eran.ipynb#X62sZmlsZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span>     model = EranForecaster.load_from_checkpoint(
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/home/ntquy/OneDrive_Deakin/DAIRNet-Proj/code/pytorch-forecasting-extras/examples/pv2006/graphic_eran.ipynb#X62sZmlsZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span>         model_path,
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/home/ntquy/OneDrive_Deakin/DAIRNet-Proj/code/pytorch-forecasting-extras/examples/pv2006/graphic_eran.ipynb#X62sZmlsZQ%3D%3D?line=9&#39;&gt;10&lt;/a&gt;</span>         map_location=torch.device(&#39;cpu&#39;),
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/home/ntquy/OneDrive_Deakin/DAIRNet-Proj/code/pytorch-forecasting-extras/examples/pv2006/graphic_eran.ipynb#X62sZmlsZQ%3D%3D?line=10&#39;&gt;11&lt;/a&gt;</span>     )
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/home/ntquy/OneDrive_Deakin/DAIRNet-Proj/code/pytorch-forecasting-extras/examples/pv2006/graphic_eran.ipynb#X62sZmlsZQ%3D%3D?line=11&#39;&gt;12&lt;/a&gt;</span> elif model_name == &#34;graphic&#34;:
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/home/ntquy/OneDrive_Deakin/DAIRNet-Proj/code/pytorch-forecasting-extras/examples/pv2006/graphic_eran.ipynb#X62sZmlsZQ%3D%3D?line=12&#39;&gt;13&lt;/a&gt;</span>     model_path = &#39;runs/graphic/prod/lightning_logs/version_15/checkpoints/epoch=0-step=21840.ckpt&#39;
+
+File <span class="ansi-green-fg">~/anaconda3/envs/ts/lib/python3.10/site-packages/lightning/pytorch/core/module.py:1531</span>, in <span class="ansi-cyan-fg">LightningModule.load_from_checkpoint</span><span class="ansi-blue-fg">(cls, checkpoint_path, map_location, hparams_file, strict, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1451</span> @classmethod
+<span class="ansi-green-intense-fg ansi-bold">   1452</span> def load_from_checkpoint(
+<span class="ansi-green-intense-fg ansi-bold">   1453</span>     cls,
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1458</span>     **kwargs: Any,
+<span class="ansi-green-intense-fg ansi-bold">   1459</span> ) -&gt; Self:
+<span class="ansi-green-intense-fg ansi-bold">   1460</span>     r&#34;&#34;&#34;
+<span class="ansi-green-intense-fg ansi-bold">   1461</span>     Primary way of loading a model from a checkpoint. When Lightning saves a checkpoint
+<span class="ansi-green-intense-fg ansi-bold">   1462</span>     it stores the arguments passed to ``__init__``  in the checkpoint under ``&#34;hyper_parameters&#34;``.
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1529</span>         y_hat = pretrained_model(x)
+<span class="ansi-green-intense-fg ansi-bold">   1530</span>     &#34;&#34;&#34;
+<span class="ansi-green-fg">-&gt; 1531</span>     loaded = _load_from_checkpoint(
+<span class="ansi-green-intense-fg ansi-bold">   1532</span>         cls,
+<span class="ansi-green-intense-fg ansi-bold">   1533</span>         checkpoint_path,
+<span class="ansi-green-intense-fg ansi-bold">   1534</span>         map_location,
+<span class="ansi-green-intense-fg ansi-bold">   1535</span>         hparams_file,
+<span class="ansi-green-intense-fg ansi-bold">   1536</span>         strict,
+<span class="ansi-green-intense-fg ansi-bold">   1537</span>         **kwargs,
+<span class="ansi-green-intense-fg ansi-bold">   1538</span>     )
+<span class="ansi-green-intense-fg ansi-bold">   1539</span>     return cast(Self, loaded)
+
+File <span class="ansi-green-fg">~/anaconda3/envs/ts/lib/python3.10/site-packages/lightning/pytorch/core/saving.py:88</span>, in <span class="ansi-cyan-fg">_load_from_checkpoint</span><span class="ansi-blue-fg">(cls, checkpoint_path, map_location, hparams_file, strict, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">     86</span>     return _load_state(cls, checkpoint, **kwargs)
+<span class="ansi-green-intense-fg ansi-bold">     87</span> if issubclass(cls, pl.LightningModule):
+<span class="ansi-green-fg">---&gt; 88</span>     storage = _load_state(cls, checkpoint, strict=strict, **kwargs)
+<span class="ansi-green-intense-fg ansi-bold">     89</span>     state_dict = checkpoint[&#34;state_dict&#34;]
+<span class="ansi-green-intense-fg ansi-bold">     90</span>     if not state_dict:
+
+File <span class="ansi-green-fg">~/anaconda3/envs/ts/lib/python3.10/site-packages/lightning/pytorch/core/saving.py:154</span>, in <span class="ansi-cyan-fg">_load_state</span><span class="ansi-blue-fg">(cls, checkpoint, strict, **cls_kwargs_new)</span>
+<span class="ansi-green-intense-fg ansi-bold">    152</span> # load the state_dict on the model automatically
+<span class="ansi-green-intense-fg ansi-bold">    153</span> assert strict is not None
+<span class="ansi-green-fg">--&gt; 154</span> keys = obj.load_state_dict(checkpoint[&#34;state_dict&#34;], strict=strict)
+<span class="ansi-green-intense-fg ansi-bold">    156</span> if not strict:
+<span class="ansi-green-intense-fg ansi-bold">    157</span>     if keys.missing_keys:
+
+File <span class="ansi-green-fg">~/anaconda3/envs/ts/lib/python3.10/site-packages/torch/nn/modules/module.py:2152</span>, in <span class="ansi-cyan-fg">Module.load_state_dict</span><span class="ansi-blue-fg">(self, state_dict, strict, assign)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2147</span>         error_msgs.insert(
+<span class="ansi-green-intense-fg ansi-bold">   2148</span>             0, &#39;Missing key(s) in state_dict: {}. &#39;.format(
+<span class="ansi-green-intense-fg ansi-bold">   2149</span>                 &#39;, &#39;.join(f&#39;&#34;{k}&#34;&#39; for k in missing_keys)))
+<span class="ansi-green-intense-fg ansi-bold">   2151</span> if len(error_msgs) &gt; 0:
+<span class="ansi-green-fg">-&gt; 2152</span>     raise RuntimeError(&#39;Error(s) in loading state_dict for {}:\n\t{}&#39;.format(
+<span class="ansi-green-intense-fg ansi-bold">   2153</span>                        self.__class__.__name__, &#34;\n\t&#34;.join(error_msgs)))
+<span class="ansi-green-intense-fg ansi-bold">   2154</span> return _IncompatibleKeys(missing_keys, unexpected_keys)
+
+<span class="ansi-red-fg">RuntimeError</span>: Error(s) in loading state_dict for EranForecaster:
+        Missing key(s) in state_dict: &#34;eran_encoder.init_E&#34;, &#34;eran_encoder.init_F&#34;, &#34;eran_encoder.E_global&#34;, &#34;eran_encoder.F_global&#34;, &#34;eran_encoder.convs.0.weight&#34;, &#34;eran_encoder.convs.0.bias&#34;, &#34;eran_encoder.convs.1.weight&#34;, &#34;eran_encoder.convs.1.bias&#34;, &#34;eran_encoder.convs.2.weight&#34;, &#34;eran_encoder.convs.2.bias&#34;, &#34;eran_encoder.attns.0.gac.rel_t&#34;, &#34;eran_encoder.attns.0.gac.tgc_q.conv.weight&#34;, &#34;eran_encoder.attns.0.gac.tgc_q.conv.bias&#34;, &#34;eran_encoder.attns.0.gac.tgc_k.conv.weight&#34;, &#34;eran_encoder.attns.0.gac.tgc_k.conv.bias&#34;, &#34;eran_encoder.attns.0.gac.tgc_v.conv.weight&#34;, &#34;eran_encoder.attns.0.gac.tgc_v.conv.bias&#34;, &#34;eran_encoder.attns.0.gac.gc_q.conv.weight&#34;, &#34;eran_encoder.attns.0.gac.gc_q.conv.bias&#34;, &#34;eran_encoder.attns.0.gac.gc_k.conv.weight&#34;, &#34;eran_encoder.attns.0.gac.gc_k.conv.bias&#34;, &#34;eran_encoder.attns.0.gac.gc_v.conv.weight&#34;, &#34;eran_encoder.attns.0.gac.gc_v.conv.bias&#34;, &#34;eran_encoder.attns.0.gac.conv_q.weight&#34;, &#34;eran_encoder.attns.0.gac.conv_q.bias&#34;, &#34;eran_encoder.attns.0.gac.conv_k.weight&#34;, &#34;eran_encoder.attns.0.gac.conv_k.bias&#34;, &#34;eran_encoder.attns.0.gac.conv_v.weight&#34;, &#34;eran_encoder.attns.0.gac.conv_v.bias&#34;, &#34;eran_encoder.attns.0.gac.bn1.weight&#34;, &#34;eran_encoder.attns.0.gac.bn1.bias&#34;, &#34;eran_encoder.attns.0.gac.bn1.running_mean&#34;, &#34;eran_encoder.attns.0.gac.bn1.running_var&#34;, &#34;eran_encoder.attns.0.gac.bn2.weight&#34;, &#34;eran_encoder.attns.0.gac.bn2.bias&#34;, &#34;eran_encoder.attns.0.gac.bn2.running_mean&#34;, &#34;eran_encoder.attns.0.gac.bn2.running_var&#34;, &#34;eran_encoder.attns.0.gac.bn3.weight&#34;, &#34;eran_encoder.attns.0.gac.bn3.bias&#34;, &#34;eran_encoder.attns.0.gac.bn3.running_mean&#34;, &#34;eran_encoder.attns.0.gac.bn3.running_var&#34;, &#34;eran_encoder.attns.0.bn.weight&#34;, &#34;eran_encoder.attns.0.bn.bias&#34;, &#34;eran_encoder.attns.0.bn.running_mean&#34;, &#34;eran_encoder.attns.0.bn.running_var&#34;, &#34;eran_encoder.attns.0.residual.0.weight&#34;, &#34;eran_encoder.attns.0.residual.0.bias&#34;, &#34;eran_encoder.attns.0.residual.1.weight&#34;, &#34;eran_encoder.attns.0.residual.1.bias&#34;, &#34;eran_encoder.attns.0.residual.1.running_mean&#34;, &#34;eran_encoder.attns.0.residual.1.running_var&#34;, &#34;eran_encoder.attns.1.gac.rel_t&#34;, &#34;eran_encoder.attns.1.gac.tgc_q.conv.weight&#34;, &#34;eran_encoder.attns.1.gac.tgc_q.conv.bias&#34;, &#34;eran_encoder.attns.1.gac.tgc_k.conv.weight&#34;, &#34;eran_encoder.attns.1.gac.tgc_k.conv.bias&#34;, &#34;eran_encoder.attns.1.gac.tgc_v.conv.weight&#34;, &#34;eran_encoder.attns.1.gac.tgc_v.conv.bias&#34;, &#34;eran_encoder.attns.1.gac.gc_q.conv.weight&#34;, &#34;eran_encoder.attns.1.gac.gc_q.conv.bias&#34;, &#34;eran_encoder.attns.1.gac.gc_k.conv.weight&#34;, &#34;eran_encoder.attns.1.gac.gc_k.conv.bias&#34;, &#34;eran_encoder.attns.1.gac.gc_v.conv.weight&#34;, &#34;eran_encoder.attns.1.gac.gc_v.conv.bias&#34;, &#34;eran_encoder.attns.1.gac.conv_q.weight&#34;, &#34;eran_encoder.attns.1.gac.conv_q.bias&#34;, &#34;eran_encoder.attns.1.gac.conv_k.weight&#34;, &#34;eran_encoder.attns.1.gac.conv_k.bias&#34;, &#34;eran_encoder.attns.1.gac.conv_v.weight&#34;, &#34;eran_encoder.attns.1.gac.conv_v.bias&#34;, &#34;eran_encoder.attns.1.gac.bn1.weight&#34;, &#34;eran_encoder.attns.1.gac.bn1.bias&#34;, &#34;eran_encoder.attns.1.gac.bn1.running_mean&#34;, &#34;eran_encoder.attns.1.gac.bn1.running_var&#34;, &#34;eran_encoder.attns.1.gac.bn2.weight&#34;, &#34;eran_encoder.attns.1.gac.bn2.bias&#34;, &#34;eran_encoder.attns.1.gac.bn2.running_mean&#34;, &#34;eran_encoder.attns.1.gac.bn2.running_var&#34;, &#34;eran_encoder.attns.1.gac.bn3.weight&#34;, &#34;eran_encoder.attns.1.gac.bn3.bias&#34;, &#34;eran_encoder.attns.1.gac.bn3.running_mean&#34;, &#34;eran_encoder.attns.1.gac.bn3.running_var&#34;, &#34;eran_encoder.attns.1.bn.weight&#34;, &#34;eran_encoder.attns.1.bn.bias&#34;, &#34;eran_encoder.attns.1.bn.running_mean&#34;, &#34;eran_encoder.attns.1.bn.running_var&#34;, &#34;eran_encoder.attns.1.residual.0.weight&#34;, &#34;eran_encoder.attns.1.residual.0.bias&#34;, &#34;eran_encoder.attns.1.residual.1.weight&#34;, &#34;eran_encoder.attns.1.residual.1.bias&#34;, &#34;eran_encoder.attns.1.residual.1.running_mean&#34;, &#34;eran_encoder.attns.1.residual.1.running_var&#34;, &#34;eran_encoder.attns.2.gac.rel_t&#34;, &#34;eran_encoder.attns.2.gac.tgc_q.conv.weight&#34;, &#34;eran_encoder.attns.2.gac.tgc_q.conv.bias&#34;, &#34;eran_encoder.attns.2.gac.tgc_k.conv.weight&#34;, &#34;eran_encoder.attns.2.gac.tgc_k.conv.bias&#34;, &#34;eran_encoder.attns.2.gac.tgc_v.conv.weight&#34;, &#34;eran_encoder.attns.2.gac.tgc_v.conv.bias&#34;, &#34;eran_encoder.attns.2.gac.gc_q.conv.weight&#34;, &#34;eran_encoder.attns.2.gac.gc_q.conv.bias&#34;, &#34;eran_encoder.attns.2.gac.gc_k.conv.weight&#34;, &#34;eran_encoder.attns.2.gac.gc_k.conv.bias&#34;, &#34;eran_encoder.attns.2.gac.gc_v.conv.weight&#34;, &#34;eran_encoder.attns.2.gac.gc_v.conv.bias&#34;, &#34;eran_encoder.attns.2.gac.conv_q.weight&#34;, &#34;eran_encoder.attns.2.gac.conv_q.bias&#34;, &#34;eran_encoder.attns.2.gac.conv_k.weight&#34;, &#34;eran_encoder.attns.2.gac.conv_k.bias&#34;, &#34;eran_encoder.attns.2.gac.conv_v.weight&#34;, &#34;eran_encoder.attns.2.gac.conv_v.bias&#34;, &#34;eran_encoder.attns.2.gac.bn1.weight&#34;, &#34;eran_encoder.attns.2.gac.bn1.bias&#34;, &#34;eran_encoder.attns.2.gac.bn1.running_mean&#34;, &#34;eran_encoder.attns.2.gac.bn1.running_var&#34;, &#34;eran_encoder.attns.2.gac.bn2.weight&#34;, &#34;eran_encoder.attns.2.gac.bn2.bias&#34;, &#34;eran_encoder.attns.2.gac.bn2.running_mean&#34;, &#34;eran_encoder.attns.2.gac.bn2.running_var&#34;, &#34;eran_encoder.attns.2.gac.bn3.weight&#34;, &#34;eran_encoder.attns.2.gac.bn3.bias&#34;, &#34;eran_encoder.attns.2.gac.bn3.running_mean&#34;, &#34;eran_encoder.attns.2.gac.bn3.running_var&#34;, &#34;eran_encoder.attns.2.bn.weight&#34;, &#34;eran_encoder.attns.2.bn.bias&#34;, &#34;eran_encoder.attns.2.bn.running_mean&#34;, &#34;eran_encoder.attns.2.bn.running_var&#34;, &#34;eran_encoder.attns.2.residual.0.weight&#34;, &#34;eran_encoder.attns.2.residual.0.bias&#34;, &#34;eran_encoder.attns.2.residual.1.weight&#34;, &#34;eran_encoder.attns.2.residual.1.bias&#34;, &#34;eran_encoder.attns.2.residual.1.running_mean&#34;, &#34;eran_encoder.attns.2.residual.1.running_var&#34;, &#34;eran_encoder.residual_convs.0.weight&#34;, &#34;eran_encoder.residual_convs.0.bias&#34;, &#34;eran_encoder.residual_convs.1.weight&#34;, &#34;eran_encoder.residual_convs.1.bias&#34;, &#34;eran_encoder.residual_convs.2.weight&#34;, &#34;eran_encoder.residual_convs.2.bias&#34;, &#34;eran_encoder.skip_convs.0.weight&#34;, &#34;eran_encoder.skip_convs.0.bias&#34;, &#34;eran_encoder.skip_convs.1.weight&#34;, &#34;eran_encoder.skip_convs.1.bias&#34;, &#34;eran_encoder.skip_convs.2.weight&#34;, &#34;eran_encoder.skip_convs.2.bias&#34;, &#34;eran_encoder.norm.0.weight&#34;, &#34;eran_encoder.norm.0.bias&#34;, &#34;eran_encoder.norm.1.weight&#34;, &#34;eran_encoder.norm.1.bias&#34;, &#34;eran_encoder.norm.2.weight&#34;, &#34;eran_encoder.norm.2.bias&#34;, &#34;eran_encoder.g_norm.0.weight&#34;, &#34;eran_encoder.g_norm.0.bias&#34;, &#34;eran_encoder.g_norm.1.weight&#34;, &#34;eran_encoder.g_norm.1.bias&#34;, &#34;eran_encoder.g_norm.2.weight&#34;, &#34;eran_encoder.g_norm.2.bias&#34;, &#34;eran_encoder.bn1.weight&#34;, &#34;eran_encoder.bn1.bias&#34;, &#34;eran_encoder.bn1.running_mean&#34;, &#34;eran_encoder.bn1.running_var&#34;, &#34;eran_encoder.start_conv.weight&#34;, &#34;eran_encoder.start_conv.bias&#34;, &#34;eran_encoder.E_conv.weight&#34;, &#34;eran_encoder.E_conv.bias&#34;, &#34;eran_encoder.F_conv.weight&#34;, &#34;eran_encoder.F_conv.bias&#34;, &#34;eran_encoder.E_gru.evolve_E.update.W&#34;, &#34;eran_encoder.E_gru.evolve_E.update.U&#34;, &#34;eran_encoder.E_gru.evolve_E.update.bias&#34;, &#34;eran_encoder.E_gru.evolve_E.reset.W&#34;, &#34;eran_encoder.E_gru.evolve_E.reset.U&#34;, &#34;eran_encoder.E_gru.evolve_E.reset.bias&#34;, &#34;eran_encoder.E_gru.evolve_E.h_tilda.W&#34;, &#34;eran_encoder.E_gru.evolve_E.h_tilda.U&#34;, &#34;eran_encoder.E_gru.evolve_E.h_tilda.bias&#34;, &#34;eran_encoder.F_gru.evolve_E.update.W&#34;, &#34;eran_encoder.F_gru.evolve_E.update.U&#34;, &#34;eran_encoder.F_gru.evolve_E.update.bias&#34;, &#34;eran_encoder.F_gru.evolve_E.reset.W&#34;, &#34;eran_encoder.F_gru.evolve_E.reset.U&#34;, &#34;eran_encoder.F_gru.evolve_E.reset.bias&#34;, &#34;eran_encoder.F_gru.evolve_E.h_tilda.W&#34;, &#34;eran_encoder.F_gru.evolve_E.h_tilda.U&#34;, &#34;eran_encoder.F_gru.evolve_E.h_tilda.bias&#34;, &#34;eran_encoder.end_conv_1.weight&#34;, &#34;eran_encoder.end_conv_1.bias&#34;, &#34;eran_encoder.skip0.weight&#34;, &#34;eran_encoder.skip0.bias&#34;, &#34;eran_encoder.skipE.weight&#34;, &#34;eran_encoder.skipE.bias&#34;.
+        Unexpected key(s) in state_dict: &#34;init_E&#34;, &#34;init_F&#34;, &#34;E_global&#34;, &#34;F_global&#34;, &#34;convs.0.weight&#34;, &#34;convs.0.bias&#34;, &#34;convs.1.weight&#34;, &#34;convs.1.bias&#34;, &#34;convs.2.weight&#34;, &#34;convs.2.bias&#34;, &#34;attns.0.gac.rel_t&#34;, &#34;attns.0.gac.tgc_q.conv.weight&#34;, &#34;attns.0.gac.tgc_q.conv.bias&#34;, &#34;attns.0.gac.tgc_k.conv.weight&#34;, &#34;attns.0.gac.tgc_k.conv.bias&#34;, &#34;attns.0.gac.tgc_v.conv.weight&#34;, &#34;attns.0.gac.tgc_v.conv.bias&#34;, &#34;attns.0.gac.gc_q.conv.weight&#34;, &#34;attns.0.gac.gc_q.conv.bias&#34;, &#34;attns.0.gac.gc_k.conv.weight&#34;, &#34;attns.0.gac.gc_k.conv.bias&#34;, &#34;attns.0.gac.gc_v.conv.weight&#34;, &#34;attns.0.gac.gc_v.conv.bias&#34;, &#34;attns.0.gac.conv_q.weight&#34;, &#34;attns.0.gac.conv_q.bias&#34;, &#34;attns.0.gac.conv_k.weight&#34;, &#34;attns.0.gac.conv_k.bias&#34;, &#34;attns.0.gac.conv_v.weight&#34;, &#34;attns.0.gac.conv_v.bias&#34;, &#34;attns.0.gac.bn1.weight&#34;, &#34;attns.0.gac.bn1.bias&#34;, &#34;attns.0.gac.bn1.running_mean&#34;, &#34;attns.0.gac.bn1.running_var&#34;, &#34;attns.0.gac.bn1.num_batches_tracked&#34;, &#34;attns.0.gac.bn2.weight&#34;, &#34;attns.0.gac.bn2.bias&#34;, &#34;attns.0.gac.bn2.running_mean&#34;, &#34;attns.0.gac.bn2.running_var&#34;, &#34;attns.0.gac.bn2.num_batches_tracked&#34;, &#34;attns.0.gac.bn3.weight&#34;, &#34;attns.0.gac.bn3.bias&#34;, &#34;attns.0.gac.bn3.running_mean&#34;, &#34;attns.0.gac.bn3.running_var&#34;, &#34;attns.0.gac.bn3.num_batches_tracked&#34;, &#34;attns.0.bn.weight&#34;, &#34;attns.0.bn.bias&#34;, &#34;attns.0.bn.running_mean&#34;, &#34;attns.0.bn.running_var&#34;, &#34;attns.0.bn.num_batches_tracked&#34;, &#34;attns.0.residual.0.weight&#34;, &#34;attns.0.residual.0.bias&#34;, &#34;attns.0.residual.1.weight&#34;, &#34;attns.0.residual.1.bias&#34;, &#34;attns.0.residual.1.running_mean&#34;, &#34;attns.0.residual.1.running_var&#34;, &#34;attns.0.residual.1.num_batches_tracked&#34;, &#34;attns.1.gac.rel_t&#34;, &#34;attns.1.gac.tgc_q.conv.weight&#34;, &#34;attns.1.gac.tgc_q.conv.bias&#34;, &#34;attns.1.gac.tgc_k.conv.weight&#34;, &#34;attns.1.gac.tgc_k.conv.bias&#34;, &#34;attns.1.gac.tgc_v.conv.weight&#34;, &#34;attns.1.gac.tgc_v.conv.bias&#34;, &#34;attns.1.gac.gc_q.conv.weight&#34;, &#34;attns.1.gac.gc_q.conv.bias&#34;, &#34;attns.1.gac.gc_k.conv.weight&#34;, &#34;attns.1.gac.gc_k.conv.bias&#34;, &#34;attns.1.gac.gc_v.conv.weight&#34;, &#34;attns.1.gac.gc_v.conv.bias&#34;, &#34;attns.1.gac.conv_q.weight&#34;, &#34;attns.1.gac.conv_q.bias&#34;, &#34;attns.1.gac.conv_k.weight&#34;, &#34;attns.1.gac.conv_k.bias&#34;, &#34;attns.1.gac.conv_v.weight&#34;, &#34;attns.1.gac.conv_v.bias&#34;, &#34;attns.1.gac.bn1.weight&#34;, &#34;attns.1.gac.bn1.bias&#34;, &#34;attns.1.gac.bn1.running_mean&#34;, &#34;attns.1.gac.bn1.running_var&#34;, &#34;attns.1.gac.bn1.num_batches_tracked&#34;, &#34;attns.1.gac.bn2.weight&#34;, &#34;attns.1.gac.bn2.bias&#34;, &#34;attns.1.gac.bn2.running_mean&#34;, &#34;attns.1.gac.bn2.running_var&#34;, &#34;attns.1.gac.bn2.num_batches_tracked&#34;, &#34;attns.1.gac.bn3.weight&#34;, &#34;attns.1.gac.bn3.bias&#34;, &#34;attns.1.gac.bn3.running_mean&#34;, &#34;attns.1.gac.bn3.running_var&#34;, &#34;attns.1.gac.bn3.num_batches_tracked&#34;, &#34;attns.1.bn.weight&#34;, &#34;attns.1.bn.bias&#34;, &#34;attns.1.bn.running_mean&#34;, &#34;attns.1.bn.running_var&#34;, &#34;attns.1.bn.num_batches_tracked&#34;, &#34;attns.1.residual.0.weight&#34;, &#34;attns.1.residual.0.bias&#34;, &#34;attns.1.residual.1.weight&#34;, &#34;attns.1.residual.1.bias&#34;, &#34;attns.1.residual.1.running_mean&#34;, &#34;attns.1.residual.1.running_var&#34;, &#34;attns.1.residual.1.num_batches_tracked&#34;, &#34;attns.2.gac.rel_t&#34;, &#34;attns.2.gac.tgc_q.conv.weight&#34;, &#34;attns.2.gac.tgc_q.conv.bias&#34;, &#34;attns.2.gac.tgc_k.conv.weight&#34;, &#34;attns.2.gac.tgc_k.conv.bias&#34;, &#34;attns.2.gac.tgc_v.conv.weight&#34;, &#34;attns.2.gac.tgc_v.conv.bias&#34;, &#34;attns.2.gac.gc_q.conv.weight&#34;, &#34;attns.2.gac.gc_q.conv.bias&#34;, &#34;attns.2.gac.gc_k.conv.weight&#34;, &#34;attns.2.gac.gc_k.conv.bias&#34;, &#34;attns.2.gac.gc_v.conv.weight&#34;, &#34;attns.2.gac.gc_v.conv.bias&#34;, &#34;attns.2.gac.conv_q.weight&#34;, &#34;attns.2.gac.conv_q.bias&#34;, &#34;attns.2.gac.conv_k.weight&#34;, &#34;attns.2.gac.conv_k.bias&#34;, &#34;attns.2.gac.conv_v.weight&#34;, &#34;attns.2.gac.conv_v.bias&#34;, &#34;attns.2.gac.bn1.weight&#34;, &#34;attns.2.gac.bn1.bias&#34;, &#34;attns.2.gac.bn1.running_mean&#34;, &#34;attns.2.gac.bn1.running_var&#34;, &#34;attns.2.gac.bn1.num_batches_tracked&#34;, &#34;attns.2.gac.bn2.weight&#34;, &#34;attns.2.gac.bn2.bias&#34;, &#34;attns.2.gac.bn2.running_mean&#34;, &#34;attns.2.gac.bn2.running_var&#34;, &#34;attns.2.gac.bn2.num_batches_tracked&#34;, &#34;attns.2.gac.bn3.weight&#34;, &#34;attns.2.gac.bn3.bias&#34;, &#34;attns.2.gac.bn3.running_mean&#34;, &#34;attns.2.gac.bn3.running_var&#34;, &#34;attns.2.gac.bn3.num_batches_tracked&#34;, &#34;attns.2.bn.weight&#34;, &#34;attns.2.bn.bias&#34;, &#34;attns.2.bn.running_mean&#34;, &#34;attns.2.bn.running_var&#34;, &#34;attns.2.bn.num_batches_tracked&#34;, &#34;attns.2.residual.0.weight&#34;, &#34;attns.2.residual.0.bias&#34;, &#34;attns.2.residual.1.weight&#34;, &#34;attns.2.residual.1.bias&#34;, &#34;attns.2.residual.1.running_mean&#34;, &#34;attns.2.residual.1.running_var&#34;, &#34;attns.2.residual.1.num_batches_tracked&#34;, &#34;residual_convs.0.weight&#34;, &#34;residual_convs.0.bias&#34;, &#34;residual_convs.1.weight&#34;, &#34;residual_convs.1.bias&#34;, &#34;residual_convs.2.weight&#34;, &#34;residual_convs.2.bias&#34;, &#34;skip_convs.0.weight&#34;, &#34;skip_convs.0.bias&#34;, &#34;skip_convs.1.weight&#34;, &#34;skip_convs.1.bias&#34;, &#34;skip_convs.2.weight&#34;, &#34;skip_convs.2.bias&#34;, &#34;norm.0.weight&#34;, &#34;norm.0.bias&#34;, &#34;norm.1.weight&#34;, &#34;norm.1.bias&#34;, &#34;norm.2.weight&#34;, &#34;norm.2.bias&#34;, &#34;g_norm.0.weight&#34;, &#34;g_norm.0.bias&#34;, &#34;g_norm.1.weight&#34;, &#34;g_norm.1.bias&#34;, &#34;g_norm.2.weight&#34;, &#34;g_norm.2.bias&#34;, &#34;bn1.weight&#34;, &#34;bn1.bias&#34;, &#34;bn1.running_mean&#34;, &#34;bn1.running_var&#34;, &#34;bn1.num_batches_tracked&#34;, &#34;start_conv.weight&#34;, &#34;start_conv.bias&#34;, &#34;E_conv.weight&#34;, &#34;E_conv.bias&#34;, &#34;F_conv.weight&#34;, &#34;F_conv.bias&#34;, &#34;E_gru.evolve_E.update.W&#34;, &#34;E_gru.evolve_E.update.U&#34;, &#34;E_gru.evolve_E.update.bias&#34;, &#34;E_gru.evolve_E.reset.W&#34;, &#34;E_gru.evolve_E.reset.U&#34;, &#34;E_gru.evolve_E.reset.bias&#34;, &#34;E_gru.evolve_E.h_tilda.W&#34;, &#34;E_gru.evolve_E.h_tilda.U&#34;, &#34;E_gru.evolve_E.h_tilda.bias&#34;, &#34;F_gru.evolve_E.update.W&#34;, &#34;F_gru.evolve_E.update.U&#34;, &#34;F_gru.evolve_E.update.bias&#34;, &#34;F_gru.evolve_E.reset.W&#34;, &#34;F_gru.evolve_E.reset.U&#34;, &#34;F_gru.evolve_E.reset.bias&#34;, &#34;F_gru.evolve_E.h_tilda.W&#34;, &#34;F_gru.evolve_E.h_tilda.U&#34;, &#34;F_gru.evolve_E.h_tilda.bias&#34;, &#34;end_conv_1.weight&#34;, &#34;end_conv_1.bias&#34;, &#34;skip0.weight&#34;, &#34;skip0.bias&#34;, &#34;skipE.weight&#34;, &#34;skipE.bias&#34;.
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
@@ -1926,11 +1936,53 @@ HPU available: False, using: 0 HPUs
 <img alt="../../_images/examples_pv2006_graphic_eran_22_0.png" src="../../_images/examples_pv2006_graphic_eran_22_0.png" />
 </div>
 </div>
+</section>
+<section id="Visualize-Sensor-Interaction-Matrix-Evolution">
+<h1>Visualize Sensor Interaction Matrix Evolution<a class="headerlink" href="#Visualize-Sensor-Interaction-Matrix-Evolution" title="Link to this heading">#</a></h1>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">mpl_toolkits.axes_grid1</span> <span class="kn">import</span> <span class="n">ImageGrid</span>
+
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">it_</span><span class="p">)</span>
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">true_predictions</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">tensor_to_predictions</span><span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="s1">&#39;decoder&#39;</span><span class="p">])</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">dynamic_A</span><span class="o">.</span><span class="n">detach</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+
+
+<span class="n">seq_length</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="c1"># timesteps = [0, seq_length//4, seq_length//2, int(seq_length*0.75), -1]</span>
+<span class="n">timesteps</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">seq_length</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">min_val</span><span class="p">,</span> <span class="n">max_val</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">timesteps</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">timesteps</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">A</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">min_val</span><span class="p">,</span> <span class="n">max_val</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">9.75</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">grid</span> <span class="o">=</span> <span class="n">ImageGrid</span><span class="p">(</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span>
+    <span class="n">nrows_ncols</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">timesteps</span><span class="p">)),</span>
+    <span class="n">axes_pad</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span>
+    <span class="n">share_all</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">cbar_location</span><span class="o">=</span><span class="s2">&quot;right&quot;</span><span class="p">,</span>
+    <span class="n">cbar_mode</span><span class="o">=</span><span class="s2">&quot;single&quot;</span><span class="p">,</span>
+    <span class="n">cbar_size</span><span class="o">=</span><span class="s2">&quot;7%&quot;</span><span class="p">,</span>
+    <span class="n">cbar_pad</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="c1"># Add data to image grid</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">ax</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">grid</span><span class="p">):</span>
+    <span class="n">B</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span>
+    <span class="n">im</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="n">min_val</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="n">max_val</span><span class="p">)</span>
+
+<span class="c1"># Colorbar</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">cax</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">im</span><span class="p">)</span>
+<span class="c1"># ax.cax.toggle_label(True)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>    <span class="c1"># Works, but may still require rect paramater to keep colorbar labels visible</span>
+<span class="c1"># plt.title(f&quot;Evolution of sensor interactions heatmap example - {len(model.dataset_params[&#39;sensors&#39;])} sensors - Ranks = {model.hparams[&#39;node_dim&#39;]}&quot;)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>

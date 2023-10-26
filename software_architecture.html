@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" />
 
     <link rel="shortcut icon" href="_static/logo2.png"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.08.19 -->
-        <title>Software Architecture - united documentation</title>
+        <title>Core Components - united documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=362ab14a" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
@@ -159,16 +159,20 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="getting_started.html">Get started</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Get started</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
+<li class="toctree-l1 has-children"><a class="reference internal" href="installation.html">Installation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Installation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="tutorials.html">Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Tutorials</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="getting_started.html">Get started</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Get started</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="core.html">Core modules</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="tutorials.html">Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Tutorials</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="examples/electricity/forecasting.html">Time series forecasting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples/basic_motions/classification.html">Time series classification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples/human_activity_recognition/annotation.html">Time series annotation</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="api.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of API Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="api.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of API Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="api/united.data.timeseries.TimeSeriesDataset.html">TimeSeriesDataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/united.data.timeseries.SensorTimeSeriesDataset.html">SensorTimeSeriesDataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/united.data.encoders.NaNLabelEncoder.html">NaNLabelEncoder</a></li>
@@ -246,8 +250,8 @@
           </label>
         </div>
         <article role="main">
-          <section id="software-architecture">
-<h1>Software Architecture<a class="headerlink" href="#software-architecture" title="Link to this heading">#</a></h1>
+          <section id="core-components">
+<h1>Core Components<a class="headerlink" href="#core-components" title="Link to this heading">#</a></h1>
 <section id="data">
 <h2>Data<a class="headerlink" href="#data" title="Link to this heading">#</a></h2>
 <p>There are two main dataset classes <code class="docutils literal notranslate"><span class="pre">TimeSeriesDataset</span></code> and <code class="docutils literal notranslate"><span class="pre">SensorTimeSeriesDataset</span></code> for convinient to work with time series data in <code class="docutils literal notranslate"><span class="pre">united</span></code> library.</p>
@@ -327,7 +331,7 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Software Architecture</a><ul>
+<li><a class="reference internal" href="#">Core Components</a><ul>
 <li><a class="reference internal" href="#data">Data</a><ul>
 <li><a class="reference internal" href="#timeseriesdataset-class">TimeSeriesDataset class</a></li>
 <li><a class="reference internal" href="#sensortimeseriesdataset-class">SensorTimeSeriesDataset class</a></li>

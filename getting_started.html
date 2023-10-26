@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Tutorials" href="tutorials.html" /><link rel="prev" title="Welcome to united" href="index.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Core modules" href="core.html" /><link rel="prev" title="Installation" href="installation.html" />
 
     <link rel="shortcut icon" href="_static/logo2.png"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.08.19 -->
         <title>Get started - united documentation</title>
@@ -159,13 +159,20 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul class="current">
-<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">Get started</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Get started</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
+<li class="toctree-l1 has-children"><a class="reference internal" href="installation.html">Installation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Installation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="tutorials.html">Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Tutorials</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
+<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">Get started</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Get started</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="api.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of API Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1"><a class="reference internal" href="core.html">Core modules</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="tutorials.html">Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Tutorials</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples/electricity/forecasting.html">Time series forecasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/basic_motions/classification.html">Time series classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/human_activity_recognition/annotation.html">Time series annotation</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="api.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of API Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="api/united.data.timeseries.TimeSeriesDataset.html">TimeSeriesDataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/united.data.timeseries.SensorTimeSeriesDataset.html">SensorTimeSeriesDataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/united.data.encoders.NaNLabelEncoder.html">NaNLabelEncoder</a></li>
@@ -247,26 +254,6 @@
 <h1>Get started<a class="headerlink" href="#get-started" title="Link to this heading">#</a></h1>
 <div class="toctree-wrapper compound" id="getting-started">
 </div>
-<section id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
-<ul class="simple" id="install">
-<li><p>Install from git repo:</p></li>
-</ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>united<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10
-conda<span class="w"> </span>activate<span class="w"> </span>united
-pip<span class="w"> </span>install<span class="w"> </span>https://github.com/trungquy/united
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Install from source code:</p></li>
-</ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>united<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10
-conda<span class="w"> </span>activate<span class="w"> </span>united
-<span class="nb">cd</span><span class="w"> </span>&lt;united<span class="w"> </span><span class="nb">source</span><span class="w"> </span>folder&gt;
-pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
-</pre></div>
-</div>
-</section>
 <section id="common-workflow-working-with-united">
 <h2>Common workflow working with <cite>united</cite><a class="headerlink" href="#common-workflow-working-with-united" title="Link to this heading">#</a></h2>
 <div class="mermaid">
@@ -328,7 +315,7 @@ directly if you do not wish to load the entire training dataset at inference tim
 </div>
 </div></blockquote>
 </li>
-<li><p>Instantiate a model using the its <a class="reference internal" href="api/united.models.base.BaseModule.html#united.models.base.BaseModule.from_dataset" title="united.models.base.BaseModule.from_dataset"><code class="xref py py-meth docutils literal notranslate"><span class="pre">from_dataset()</span></code></a> method.</p>
+<li><p>Instantiate a model using <a class="reference internal" href="api/united.models.base.BaseModule.html#united.models.base.BaseModule.from_dataset" title="united.models.base.BaseModule.from_dataset"><code class="xref py py-meth docutils literal notranslate"><span class="pre">from_dataset()</span></code></a> method.</p>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># create forecasting model</span>
 <span class="n">model</span> <span class="o">=</span> <span class="n">LSTMForecaster</span><span class="o">.</span><span class="n">from_dataset</span><span class="p">(</span><span class="n">train_dataset</span><span class="p">)</span>
@@ -414,23 +401,23 @@ directly if you do not wish to load the entire training dataset at inference tim
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="tutorials.html">
+          <a class="next-page" href="core.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Tutorials</div>
+                <div class="title">Core modules</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="index.html">
+          <a class="prev-page" href="installation.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Home</div>
+                <div class="title">Installation</div>
                 
               </div>
             </a>
@@ -465,7 +452,6 @@ directly if you do not wish to load the entire training dataset at inference tim
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Get started</a><ul>
-<li><a class="reference internal" href="#installation">Installation</a></li>
 <li><a class="reference internal" href="#common-workflow-working-with-united">Common workflow working with <cite>united</cite></a></li>
 <li><a class="reference internal" href="#usage">Usage</a></li>
 </ul>
