@@ -1,4 +1,4 @@
-# Core Components
+# Software Architecture
 
 ## Data
 

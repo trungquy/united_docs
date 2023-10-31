@@ -1,10 +1,10 @@
 .. _home:
 
 =================
-Welcome to united
+Welcome to UNITED
 =================
 
-An UNIfied TEmporal Data Processing Framework.
+An UNIfied TEmporal Data representation, reasoning, and predictions framework.
 
 
 Features
