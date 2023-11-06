@@ -275,21 +275,31 @@
 </div>
 </div></blockquote>
 </li>
+<li><p>Setting variable type: <cite>united</cite> infer variable types (categorical or continuos) from DataFrame data type of each column. Therefore, we need to assign correct column type using <cite>.as_type(‘category’)</cite> function.</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">CATEGORICAL_COLUMNS</span><span class="p">:</span>
+    <span class="n">train_df</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="n">train_df</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+    <span class="n">test_df</span><span class="p">[</span><span class="n">target</span><span class="p">]</span> <span class="o">=</span> <span class="n">test_df</span><span class="p">[</span><span class="n">target</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+    <span class="n">val_df</span><span class="p">[</span><span class="n">target</span><span class="p">]</span>  <span class="o">=</span> <span class="n">val_df</span><span class="p">[</span><span class="n">target</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
 <li><p>Create dataset instances using <a class="reference internal" href="api/united.data.timeseries.TimeSeriesDataset.html#united.data.timeseries.TimeSeriesDataset" title="united.data.timeseries.TimeSeriesDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">TimeSeriesDataset</span></code></a> or <a class="reference internal" href="api/united.data.timeseries.SensorTimeSeriesDataset.html#united.data.timeseries.SensorTimeSeriesDataset" title="united.data.timeseries.SensorTimeSeriesDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">SensorTimeSeriesDataset</span></code></a></p>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># define dataset</span>
 <span class="n">training</span> <span class="o">=</span> <span class="n">TimeSeriesDataSet</span><span class="p">(</span>
-    <span class="n">group_ids</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sensor&#39;</span><span class="p">],</span>
-    <span class="n">time_idx</span><span class="o">=</span><span class="s1">&#39;time_idx&#39;</span><span class="p">,</span>
+    <span class="n">group_ids</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sensor&#39;</span><span class="p">],</span> <span class="c1"># list of column names are used to identify a time series</span>
+    <span class="n">time_idx</span><span class="o">=</span><span class="s1">&#39;time_idx&#39;</span><span class="p">,</span> <span class="c1"># column name for time dimension of sequence</span>
     <span class="n">min_encoder_length</span><span class="o">=</span><span class="mi">7</span><span class="o">*</span><span class="mi">24</span><span class="p">,</span>
     <span class="n">max_encoder_length</span><span class="o">=</span><span class="mi">7</span><span class="o">*</span><span class="mi">24</span><span class="p">,</span>
     <span class="n">min_decoder_length</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span>
     <span class="n">max_decoder_length</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span>
-    <span class="n">encoder_variables</span><span class="o">=</span><span class="p">[</span><span class="o">...</span><span class="p">],</span>
-    <span class="n">decoder_variables</span><span class="o">=</span><span class="p">[</span><span class="o">...</span><span class="p">],</span>
-    <span class="n">targets</span><span class="o">=</span><span class="p">[</span><span class="o">...</span><span class="p">],</span>
+    <span class="n">encoder_variables</span><span class="o">=</span><span class="p">[</span><span class="o">...</span><span class="p">],</span> <span class="c1"># list of encoder variables</span>
+    <span class="n">decoder_variables</span><span class="o">=</span><span class="p">[</span><span class="o">...</span><span class="p">],</span> <span class="c1"># list of decoder variables</span>
+    <span class="n">targets</span><span class="o">=</span><span class="p">[</span><span class="o">...</span><span class="p">],</span> <span class="c1"># list of target columns to make prediction</span>
     <span class="n">training</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-    <span class="n">imputers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="c1"># &quot;ffill&quot;, &quot;bfill&quot;, &quot;linear&quot;, &quot;tryhard&quot;, &quot;mean&quot;</span>
+    <span class="n">imputers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="c1"># one of following imputers: &quot;ffill&quot;, &quot;bfill&quot;, &quot;linear&quot;, &quot;tryhard&quot;, &quot;mean&quot;</span>
 <span class="p">)</span>
 </pre></div>
 </div>

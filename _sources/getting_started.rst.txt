@@ -29,7 +29,17 @@ The general setup for training and testing a model as following:
         # load data into Pandas DataFrame
         train_df = ... # pandas DataFrame
         val_df = ... # pandas DataFrame
-        test_df = ... # pandas DataFrame        
+        test_df = ... # pandas DataFrame
+
+#. Setting variable type: `united` infer variable types (categorical or continuos) from DataFrame data type of each column. Therefore, we need to assign correct column type using `.as_type('category')` function.
+
+    .. code-block:: python
+
+        for column in CATEGORICAL_COLUMNS:
+            train_df[column] = train_df[column].astype('category')
+            test_df[target] = test_df[target].astype('category')
+            val_df[target]  = val_df[target].astype('category')
+
 
 #. Create dataset instances using :py:class:`~data.timeseries.TimeSeriesDataset` or :py:class:`~data.timeseries.SensorTimeSeriesDataset`
 
@@ -37,17 +47,17 @@ The general setup for training and testing a model as following:
 
         # define dataset
         training = TimeSeriesDataSet(
-            group_ids=['sensor'],
-            time_idx='time_idx',
+            group_ids=['sensor'], # list of column names are used to identify a time series
+            time_idx='time_idx', # column name for time dimension of sequence
             min_encoder_length=7*24,
             max_encoder_length=7*24,
             min_decoder_length=24,
             max_decoder_length=24,
-            encoder_variables=[...],
-            decoder_variables=[...],
-            targets=[...],
+            encoder_variables=[...], # list of encoder variables
+            decoder_variables=[...], # list of decoder variables
+            targets=[...], # list of target columns to make prediction
             training=True,
-            imputers=None, # "ffill", "bfill", "linear", "tryhard", "mean"
+            imputers=None, # one of following imputers: "ffill", "bfill", "linear", "tryhard", "mean"
         )
  
 #. Using the training dataset, create a validation dataset with :py:meth:`~data.timeseries.TimeSeriesDataset.from_dataset`.
