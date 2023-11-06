@@ -67,5 +67,4 @@ model developer such as:
 .. figure:: _static/models.png
    :alt: Model class diagram
 
-   Model class diagram of ``united`` which includes (1) a :py:class:`~models.base.BaseModule` class to represent the generic interface for the inputs, outputs, and predictions, and (2) different types of
-prediction heads and their specific implementations.
+   Model class diagram of ``united`` which includes (1) a :py:class:`~models.base.BaseModule` class to represent the generic interface for the inputs, outputs, and predictions, and (2) different types of prediction heads and their specific implementations.
